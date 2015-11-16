@@ -112,3 +112,12 @@ footer #socialNav li{
 	margin-top: 15px;
 	padding: 0;
 }
+
+h2#forgotPassword{
+	/* FORGOT YOUR PASSWORD: */
+font-family: ManifoldCF-Light;
+font-size: 48px;
+color: #000000;
+letter-spacing: 9.6px;
+line-height: 70px;
+}
