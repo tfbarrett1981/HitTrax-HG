@@ -1,4 +1,4 @@
-html, body, #container { height: 100%; min-width: 905px;}
+html, body, #container { height: 100%; min-width: 915px;}
 body > #container { height: auto; min-height: 100%; position: relative;}
 #content { 
 	padding-bottom: 70px; 
