@@ -197,12 +197,33 @@ hr {
 #passwordInputBox input:-ms-input-placeholder {
   color: #fff !important;
 }
-.submitButton {
-  background: url(../img/form-submit.png) no-repeat;
+.buttonBorder {
+  background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
   width: 166px;
   height: 60px;
-  margin: 0 auto;
-  text-indent: -9999px;
+  border-radius: 5px;
+  padding: 3px;
+}
+.submitButton {
+  border-radius: 3px;
   border: 0;
-  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: #2c2c2c;
+  font-family: ManifoldCF-Regular;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.submitButton:hover {
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background: rgba(44, 44, 44, 0.5);
+}
+.center {
+  margin: 0 auto;
 }
