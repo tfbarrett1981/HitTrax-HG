@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/site.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body class="reset-password-template">
         
             
         <header>
@@ -34,11 +34,20 @@
         <div id="content">
             <h2 id="forgotPasswordReset">PASSWORD RESET</h2>
             <hr>
-            <p id="passwordText">Please create a new password for your HitTrax account. Your new password must be at least 6 characters, and is case sensitive.</p>
-            <div id="passwordInputBox"><img src="img/lock.png" alt="">&nbsp;<input type="text" placeholder="Type your new password"></div>
-            <div id="passwordInputBox"><img src="img/lock.png" alt="">&nbsp;<input type="text" placeholder="Confimr your new password"></div>
+            <div class="hidden" id="resetSuccess">
+                <img src="img/Check.png" alt="">
+                <p>Your HitTrax password has been reset. You can now login to your account using your email address and this new password.</p>
+            </div>
+            <div id="resetFail" class="hidden">
+                <img src="img/Nope.png" alt="">
+                <p>Your new HitTrax password must be at least 6 characters.</p>
+            </div>
+            
+            <p class="passwordText">Please create a new password for your HitTrax account. Your new password must be at least 6 characters, and is case sensitive.</p>
+            <div class="passwordInputBox"><img src="img/lock.png" alt="">&nbsp;<input type="text" placeholder="Type your new password"></div>
+            <div class="passwordInputBox"><img src="img/lock.png" alt="">&nbsp;<input type="text" placeholder="Confirm your new password"></div>
             <div class="buttonBorder center">
-                <input type="submit" value="SUBMIT" class="submitButton">
+                <input type="submit" value="RESET MY PASSWORD" class="submitButton">
             </div><br /><br />
             
        </div>

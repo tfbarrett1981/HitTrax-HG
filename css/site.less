@@ -185,7 +185,7 @@ hr{
 	margin: 40px auto;
 }
 
-#passwordText{
+.passwordText{
 	/* Can’t remember your : */
 font-family: ManifoldCF-Light;
 font-size: 18px;
@@ -196,7 +196,7 @@ margin: 0 auto;
 margin-bottom: 30px;
 }
 
-#passwordInputBox{
+.passwordInputBox{
 	/* Base Copy: */
 background: rgba(0, 0, 0, 0.6);
 border-radius: 5px;
@@ -252,6 +252,11 @@ margin-bottom:30px;
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 2px;
+	outline: none;
+}
+
+.reset-password-template .buttonBorder{
+	width:265px;
 }
 
 .submitButton:hover{
@@ -271,6 +276,9 @@ color: #5DCC6C;
 line-height: 21px;
 width: 362px;
 margin: 0 auto;
+img{
+	.center;	
+}
 }
 #noAccount{
 	/* Sorry, we can’t find: */
@@ -282,6 +290,35 @@ width: 362px;
 margin: 0 auto;
 img{
 	.center;	
+}
+
+}
+
+#resetSuccess{
+	/* We’ve found your Hit: */
+font-family: ManifoldCF-Light;
+font-size: 18px;
+color: #fff;
+line-height: 21px;
+width: 362px;
+margin: 0 auto;
+img{
+	.center;
+	display: block;
+}
+}
+
+#resetFail{
+	/* Sorry, we can’t find: */
+font-family: ManifoldCF-Regular;
+font-size: 18px;
+color: #E7273E;
+line-height: 21px;
+width: 362px;
+margin: 0 auto;
+img{
+	.center;
+	display: block;
 }
 
 }

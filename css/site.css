@@ -160,7 +160,7 @@ hr {
   background: #fff;
   margin: 40px auto;
 }
-#passwordText {
+.passwordText {
   /* Can’t remember your : */
   font-family: ManifoldCF-Light;
   font-size: 18px;
@@ -170,7 +170,7 @@ hr {
   margin: 0 auto;
   margin-bottom: 30px;
 }
-#passwordInputBox {
+.passwordInputBox {
   /* Base Copy: */
   background: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
@@ -181,27 +181,27 @@ hr {
   line-height: 54px;
   margin-bottom: 30px;
 }
-#passwordInputBox img {
+.passwordInputBox img {
   padding: 0 20px 0 10px;
 }
-#passwordInputBox input {
+.passwordInputBox input {
   border: 0;
   background: transparent;
   width: 60%;
   color: #fff;
 }
-#passwordInputBox input::-webkit-input-placeholder {
+.passwordInputBox input::-webkit-input-placeholder {
   color: #fff !important;
 }
-#passwordInputBox input:-moz-placeholder {
+.passwordInputBox input:-moz-placeholder {
   /* Firefox 18- */
   color: #fff !important;
 }
-#passwordInputBox input::-moz-placeholder {
+.passwordInputBox input::-moz-placeholder {
   /* Firefox 19+ */
   color: #fff !important;
 }
-#passwordInputBox input:-ms-input-placeholder {
+.passwordInputBox input:-ms-input-placeholder {
   color: #fff !important;
 }
 .buttonBorder {
@@ -222,6 +222,10 @@ hr {
   font-weight: bold;
   font-size: 20px;
   letter-spacing: 2px;
+  outline: none;
+}
+.reset-password-template .buttonBorder {
+  width: 265px;
 }
 .submitButton:hover {
   -webkit-transition: all 500ms ease;
@@ -240,6 +244,9 @@ hr {
   width: 362px;
   margin: 0 auto;
 }
+#foundAccount img {
+  margin: 0 auto;
+}
 #noAccount {
   /* Sorry, we can’t find: */
   font-family: ManifoldCF-Regular;
@@ -249,7 +256,32 @@ hr {
   width: 362px;
   margin: 0 auto;
 }
-#noAccount img, #foundAccount img {
+#noAccount img {
+  margin: 0 auto;
+}
+#resetSuccess {
+  /* We’ve found your Hit: */
+  font-family: ManifoldCF-Light;
+  font-size: 18px;
+  color: #fff;
+  line-height: 21px;
+  width: 362px;
+  margin: 0 auto;
+}
+#resetSuccess img {
+  margin: 0 auto;
+  display: block;
+}
+#resetFail {
+  /* Sorry, we can’t find: */
+  font-family: ManifoldCF-Regular;
+  font-size: 18px;
+  color: #E7273E;
+  line-height: 21px;
+  width: 362px;
+  margin: 0 auto;
+}
+#resetFail img {
   margin: 0 auto;
   display: block;
 }
