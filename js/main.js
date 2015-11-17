@@ -15,6 +15,7 @@ $( document ).ready(function() {
 		if(item == "resetSuccess")
 		{
 			$(".passwordText, .passwordInputBox").addClass("hidden");
+			$(".submitButton").val("LOGIN NOW")
 		}
 		
 		if(item == "resetFail")
