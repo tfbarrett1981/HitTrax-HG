@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'ManifoldCF-Regular';
-  src: url('../webfonts/Manifold CF/ManifoldCF-Regular.eot');
-  src: url('../webfonts/Manifold CF/ManifoldCF-Regular.eot?#iefix') format('embedded-opentype'), url('../webfonts/Manifold CF/ManifoldCF-Regular.woff') format('woff'), url('../webfonts/Manifold CF/ManifoldCF-Regular.ttf') format('truetype'), url('../webfonts/Manifold CF/ManifoldCF-Regular.svg#webfont') format('svg');
+  src: url('../webfonts/Manifold CF/ManifoldCF-Regular-webfont.eot');
+  src: url('../webfonts/Manifold CF/ManifoldCF-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../webfonts/Manifold CF/ManifoldCF-Regular-webfont.woff') format('woff'), url('../webfonts/Manifold CF/ManifoldCF-Regular-webfont.ttf') format('truetype'), url('../webfonts/Manifold CF/ManifoldCF-Regular-webfont.svg#webfont') format('svg');
 }
 @font-face {
   font-family: 'ManifoldCF-Light';
-  src: url('../webfonts/Manifold CF/ManifoldCF-Light.eot');
-  src: url('../webfonts/Manifold CF/ManifoldCF-Light.eot?#iefix') format('embedded-opentype'), url('../webfonts/Manifold CF/ManifoldCF-Light.woff') format('woff'), url('../webfonts/Manifold CF/ManifoldCF-Light.ttf') format('truetype'), url('../webfonts/Manifold CF/ManifoldCF-Light.svg#webfont') format('svg');
+  src: url('../webfonts/Manifold CF/ManifoldCF-Light-webfont.eot');
+  src: url('../webfonts/Manifold CF/ManifoldCF-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../webfonts/Manifold CF/ManifoldCF-Light-webfont.woff') format('woff'), url('../webfonts/Manifold CF/ManifoldCF-Light-webfont.ttf') format('truetype'), url('../webfonts/Manifold CF/ManifoldCF-Light-webfont.svg#webfont') format('svg');
 }
 html {
   min-height: 100%;
