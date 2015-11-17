@@ -146,6 +146,13 @@ h2#forgotPassword {
   height: 37px;
   margin-top: 40px;
 }
+h2#forgotPasswordReset {
+  /* FORGOT YOUR PASSWORD: */
+  background: url(../img/password-reset.png) no-repeat center center;
+  text-indent: -9999px;
+  height: 37px;
+  margin-top: 40px;
+}
 hr {
   color: #fff;
   width: 150px;
@@ -172,7 +179,7 @@ hr {
   margin: 0 auto;
   vertical-align: middle;
   line-height: 54px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 #passwordInputBox img {
   padding: 0 20px 0 10px;
@@ -224,6 +231,31 @@ hr {
   transition: all 500ms ease;
   background: rgba(44, 44, 44, 0.5);
 }
+#foundAccount {
+  /* We’ve found your Hit: */
+  font-family: ManifoldCF-Light;
+  font-size: 18px;
+  color: #5DCC6C;
+  line-height: 21px;
+  width: 362px;
+  margin: 0 auto;
+}
+#noAccount {
+  /* Sorry, we can’t find: */
+  font-family: ManifoldCF-Regular;
+  font-size: 18px;
+  color: #E7273E;
+  line-height: 21px;
+  width: 362px;
+  margin: 0 auto;
+}
+#noAccount img, #foundAccount img {
+  margin: 0 auto;
+  display: block;
+}
 .center {
   margin: 0 auto;
+}
+.hidden {
+  display: none;
 }
