@@ -8,6 +8,11 @@
   src: url('../webfonts/Manifold CF/ManifoldCF-Light-webfont.eot');
   src: url('../webfonts/Manifold CF/ManifoldCF-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../webfonts/Manifold CF/ManifoldCF-Light-webfont.woff') format('woff'), url('../webfonts/Manifold CF/ManifoldCF-Light-webfont.ttf') format('truetype'), url('../webfonts/Manifold CF/ManifoldCF-Light-webfont.svg#webfont') format('svg');
 }
+@font-face {
+  font-family: 'ManifoldCF-ExtraBold';
+  src: url('../webfonts/Manifold CF/ManifoldCF-ExtraBold-webfont.eot');
+  src: url('../webfonts/Manifold CF/ManifoldCF-ExtraBoldwebfont.eot?#iefix') format('embedded-opentype'), url('../webfonts/Manifold CF/ManifoldCF-ExtraBold-webfont.woff') format('woff'), url('../webfonts/Manifold CF/ManifoldCF-ExtraBold-webfont.ttf') format('truetype'), url('../webfonts/Manifold CF/ManifoldCF-ExtraBold-webfont.svg#webfont') format('svg');
+}
 html {
   min-height: 100%;
   min-width: 915px;
