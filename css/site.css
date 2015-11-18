@@ -249,6 +249,99 @@ h2#forgotPasswordReset {
   transition: all 500ms ease;
   background: rgba(44, 44, 44, 0.3);
 }
+/* PLAYER TEMPLATE */
+.player-subscribed-template #dateLocation {
+  width: 942px;
+  margin: 0 auto;
+}
+.player-subscribed-template h2#pageTitle {
+  background: url(../img/my-last-batting-session.png) no-repeat center center;
+  text-indent: -9999px;
+  height: 50px;
+  margin-top: 40px;
+}
+.player-subscribed-template hr:first-child {
+  float: left;
+  margin-top: 13px;
+  width: 200px;
+}
+.player-subscribed-template hr:last-child {
+  float: right;
+  margin-top: 13px;
+  width: 200px;
+}
+.player-subscribed-template h3 {
+  /* HR Left: */
+  /* Date/Location: */
+  font-family: ManifoldCF-Regular;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  line-height: 24px;
+  /* HR Right: */
+  text-align: center;
+  width: 542px;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.player-subscribed-template .tab {
+  background: url(../img/player-tab.png) no-repeat;
+  width: 1142px;
+  height: 608px;
+  margin: 0 auto;
+}
+.player-subscribed-template .callout-mobile {
+  /* Bar Background Copy: */
+  background: url(../img/hittrax-bgvideo-blur-color.png);
+  background-size: cover;
+  height: 600px;
+}
+.player-subscribed-template .callout-mobile #callout-wrapper {
+  width: 1142px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+.player-subscribed-template .callout-mobile #callout-wrapper img.app-icon {
+  margin-top: 120px;
+}
+.player-subscribed-template .callout-mobile #callout-wrapper h4 {
+  text-indent: -9999px;
+  background: url(../img/go-mobile.png) no-repeat;
+  width: 267px;
+  height: 41px;
+}
+.player-subscribed-template .callout-mobile #callout-wrapper p {
+  /* Body Copy: */
+  font-family: ManifoldCF-Regular;
+  font-size: 18px;
+  color: #000000;
+  line-height: 24px;
+  width: 495px;
+}
+.player-subscribed-template .callout-mobile #callout-wrapper h5 {
+  /* SubHead: */
+  font-family: ManifoldCF-Regular;
+  font-size: 21px;
+  color: #000000;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+.player-subscribed-template .callout-mobile #callout-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.player-subscribed-template .callout-mobile #callout-wrapper ul li {
+  float: left;
+  margin-right: 20px;
+}
+.player-subscribed-template .callout-mobile #callout-wrapper img.phone {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
 hr {
   color: #fff;
   width: 150px;
