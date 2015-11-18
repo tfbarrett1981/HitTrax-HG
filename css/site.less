@@ -177,41 +177,114 @@ height: 37px;
 margin-top: 40px;
 }
 
-.player-template #dateLocation{
-	width:942px;
-	margin:0 auto;
-}
-
-.player-template h2#pageTitle{
-background: url(../img/my-last-batting-session.png) no-repeat center center;
- text-indent: -9999px;
-height: 50px;
-margin-top: 40px;	
-}
-
-.player-template hr:first-child{
+/* PLAYER TEMPLATE */
+.player-template {
+	
+	#dateLocation{
+		width:942px;
+		margin:0 auto;
+	}
+	
+	h2#pageTitle{
+	background: url(../img/my-last-batting-session.png) no-repeat center center;
+	text-indent: -9999px;
+	height: 50px;
+	margin-top: 40px;	
+	}
+	
+	hr:first-child{
+		float: left;
+		margin-top: 13px;
+		width:200px;
+	}
+	
+	hr:last-child{
+		float:right;
+		margin-top: 13px;	
+		width:200px;
+	}
+	h3{
+		/* HR Left: */
+	/* Date/Location: */
+	font-family: ManifoldCF-Regular;
+	font-size: 20px;
+	color: #FFFFFF;
+	letter-spacing: 2px;
+	line-height: 24px;
+	/* HR Right: */
+	text-align: center;
+	width: 542px;
+	margin: 0;
+	padding: 0;
 	float: left;
-	margin-top: 13px;
-}
-
-.player-template hr:last-child{
-	float:right;
-	margin-top: 13px;	
-}
-.player-template h3{
-	/* HR Left: */
-/* Date/Location: */
-font-family: ManifoldCF-Regular;
-font-size: 20px;
-color: #FFFFFF;
-letter-spacing: 2px;
-line-height: 24px;
-/* HR Right: */
-text-align: center;
-width: 642px;
-margin: 0;
-padding: 0;
-float: left;
+	}
+	
+	.tab{
+		background: url(../img/player-tab.png) no-repeat;
+		width:1142px;
+		height: 608px;
+		margin: 0 auto;
+	}
+	
+	.callout{
+		/* Bar Background Copy: */
+	background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
+	height: 345px;
+	
+		h4{
+			/* YOU’RE MISSING OUT O: */
+			font-family: ManifoldCF-Bold;
+			font-size: 26px;
+			color: #2C2C2C;
+			line-height: 36px;
+			width: 753px;
+			margin: 0 auto;
+			text-align: center;
+			padding-top: 40px;
+		}
+		
+		p{
+			width: 753px;
+			margin: 0 auto;
+			text-align: center;
+			/* Text: */
+			font-family: ManifoldCF-Regular;
+			font-size: 20px;
+			color: #FFFFFF;
+			line-height: 30px;
+			margin-top: 20px;
+		}
+		
+		.button{
+			/* Frame: */
+			border: 3px solid #2C2C2C;
+			border-radius: 5px;
+			/* JOIN HITTRAX STATSCE: */
+			font-family: ManifoldCF-Bold;
+			font-size: 21px;
+			color: #FFFFFF;
+			letter-spacing: 1px;
+			width: 354px;
+			height: 60px;
+			margin: 0 auto;
+			text-align: center;
+			display: block;
+			vertical-align: middle;
+			line-height: 60px;
+			text-decoration: none;
+			margin-top: 20px;
+		}
+		
+		.button:hover{
+			background: rgba(44,44,44,0.30);
+			-webkit-transition: all 500ms ease;
+			-moz-transition: all 500ms ease;
+			-ms-transition: all 500ms ease;
+			-o-transition: all 500ms ease;
+			transition: all 500ms ease;
+			background: rgba(44,44,44,0.30);
+		}
+	}
 }
 
 hr{
