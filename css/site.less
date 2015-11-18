@@ -379,11 +379,39 @@ margin-top: 40px;
 				list-style: none;
 				margin: 0;
 				padding: 0;
+				
 				li{
 					float:left;
 					margin-right: 20px;
+					width: 142px;
+					height: 48px;
+					
+					a{
+						display: block;
+						height: 100%;
+					}
+					a:hover{
+						background: rgba(44,44,44,0.30);
+						-webkit-transition: all 500ms ease;
+						-moz-transition: all 500ms ease;
+						-ms-transition: all 500ms ease;
+						-o-transition: all 500ms ease;
+						transition: all 500ms ease;
+						background: rgba(44,44,44,0.30);
+						
+					}
 				}
+				
+				li:first-child{
+					background: url(../img/apple-app-store.png) no-repeat;
+				}
+				li:last-child{
+					background: url(../img/google-play.png) no-repeat;
+				}
+				
+				
 			}
+			
 			img.phone{
 				position: absolute;
 				bottom: 0;
@@ -395,6 +423,89 @@ margin-top: 40px;
 	
 	.callout-desktop{
 		
+		
+		background-size: cover;
+		height: 600px;
+	
+		#callout-wrapper{
+			width:1142px;
+			margin: 0 auto;
+			position: relative;
+			height: 100%;
+			
+			aside{
+				
+				width: 343px;
+				float: right;
+				img.app-icon{
+					margin-top: 100px;
+				}
+				
+				h4{
+					text-indent: -9999px;
+					background: url(../img/desktop-app-title.png) no-repeat;
+					width: 323px;
+					height: 41px;
+				}
+				
+				p{
+					/* Body Copy: */
+					font-family: ManifoldCF-Regular;
+					font-size: 18px;
+					color: #FFFFFF;
+					line-height: 24px;
+					width: 343px;
+				}
+				h5{
+					/* SubHead: */
+					font-family: ManifoldCF-Regular;
+					font-size: 21px;
+					color: #FFFFFF;
+					letter-spacing: 1px;
+					line-height: 24px;
+				}
+				ul{
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					
+					li{
+						float:left;
+						margin-right: 20px;
+						width: 142px;
+						height: 48px;
+						background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
+						padding:2px;
+						a{
+							display: block;
+							height: 100%;
+							background-color: #2c2c2c;
+							text-decoration: none;
+							/* WINDOWS: */
+							font-family: ManifoldCF-ExtraBold;
+							font-size: 24px;
+							color: #FFFFFF;
+							line-height: 48px;
+							vertical-align: middle;
+							text-align: center;
+							
+						}
+					}
+					
+					li:first-child{
+					}
+					li:last-child{
+					}
+				
+				}
+			}
+			
+			img.desktop{
+				position: absolute;
+				bottom: 100px;;
+				left: 0px;	
+			}
+		}		
 	}
 }
 

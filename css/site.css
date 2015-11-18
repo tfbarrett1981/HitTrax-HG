@@ -336,11 +336,101 @@ h2#forgotPasswordReset {
 .player-subscribed-template .callout-mobile #callout-wrapper ul li {
   float: left;
   margin-right: 20px;
+  width: 142px;
+  height: 48px;
+}
+.player-subscribed-template .callout-mobile #callout-wrapper ul li a {
+  display: block;
+  height: 100%;
+}
+.player-subscribed-template .callout-mobile #callout-wrapper ul li a:hover {
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background: rgba(44, 44, 44, 0.3);
+}
+.player-subscribed-template .callout-mobile #callout-wrapper ul li:first-child {
+  background: url(../img/apple-app-store.png) no-repeat;
+}
+.player-subscribed-template .callout-mobile #callout-wrapper ul li:last-child {
+  background: url(../img/google-play.png) no-repeat;
 }
 .player-subscribed-template .callout-mobile #callout-wrapper img.phone {
   position: absolute;
   bottom: 0;
   right: 50px;
+}
+.player-subscribed-template .callout-desktop {
+  background-size: cover;
+  height: 600px;
+}
+.player-subscribed-template .callout-desktop #callout-wrapper {
+  width: 1142px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+.player-subscribed-template .callout-desktop #callout-wrapper aside {
+  width: 343px;
+  float: right;
+}
+.player-subscribed-template .callout-desktop #callout-wrapper aside img.app-icon {
+  margin-top: 100px;
+}
+.player-subscribed-template .callout-desktop #callout-wrapper aside h4 {
+  text-indent: -9999px;
+  background: url(../img/desktop-app-title.png) no-repeat;
+  width: 323px;
+  height: 41px;
+}
+.player-subscribed-template .callout-desktop #callout-wrapper aside p {
+  /* Body Copy: */
+  font-family: ManifoldCF-Regular;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 24px;
+  width: 343px;
+}
+.player-subscribed-template .callout-desktop #callout-wrapper aside h5 {
+  /* SubHead: */
+  font-family: ManifoldCF-Regular;
+  font-size: 21px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+.player-subscribed-template .callout-desktop #callout-wrapper aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.player-subscribed-template .callout-desktop #callout-wrapper aside ul li {
+  float: left;
+  margin-right: 20px;
+  width: 142px;
+  height: 48px;
+  background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
+  padding: 2px;
+}
+.player-subscribed-template .callout-desktop #callout-wrapper aside ul li a {
+  display: block;
+  height: 100%;
+  background-color: #2c2c2c;
+  text-decoration: none;
+  /* WINDOWS: */
+  font-family: ManifoldCF-ExtraBold;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 48px;
+  vertical-align: middle;
+  text-align: center;
+}
+.player-subscribed-template .callout-desktop #callout-wrapper img.desktop {
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
 }
 hr {
   color: #fff;
