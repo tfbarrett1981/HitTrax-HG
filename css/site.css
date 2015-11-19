@@ -696,17 +696,14 @@ h2#forgotPasswordReset {
   height: 40px;
   border: 0;
 }
-.owner-template .facility-leaderboard .tab div.tableBG {
+.owner-template .facility-leaderboard .tab table {
   position: absolute;
   top: 160px;
-  background-color: #000;
-  width: 1142px;
-}
-.owner-template .facility-leaderboard .tab div.tableBG table {
+  left: 20px;
   width: 1093px;
   margin: 0 auto;
 }
-.owner-template .facility-leaderboard .tab div.tableBG table thead th {
+.owner-template .facility-leaderboard .tab table thead th {
   /* PLAYER: */
   font-family: ManifoldCF-ExtraBold;
   font-size: 20px;
@@ -714,24 +711,24 @@ h2#forgotPasswordReset {
   line-height: 40px;
   text-align: left;
 }
-.owner-template .facility-leaderboard .tab div.tableBG table tbody tr:nth-child(odd) {
+.owner-template .facility-leaderboard .tab table tbody tr:nth-child(odd) {
   background: rgba(255, 255, 255, 0.2);
 }
-.owner-template .facility-leaderboard .tab div.tableBG table tbody tr:nth-child(odd) td {
+.owner-template .facility-leaderboard .tab table tbody tr:nth-child(odd) td {
   font-family: ManifoldCF-Regular;
   font-size: 20px;
   color: #fff;
   padding: 5px 10px;
 }
-.owner-template .facility-leaderboard .tab div.tableBG table tbody tr:nth-child(odd) td:first-child {
+.owner-template .facility-leaderboard .tab table tbody tr:nth-child(odd) td:first-child {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-.owner-template .facility-leaderboard .tab div.tableBG table tbody tr:nth-child(odd) td:last-child {
+.owner-template .facility-leaderboard .tab table tbody tr:nth-child(odd) td:last-child {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.owner-template .facility-leaderboard .tab div.tableBG table tbody tr:nth-child(even) td {
+.owner-template .facility-leaderboard .tab table tbody tr:nth-child(even) td {
   font-family: ManifoldCF-Regular;
   font-size: 20px;
   color: #fff;

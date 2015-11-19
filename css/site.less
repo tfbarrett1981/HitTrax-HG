@@ -821,59 +821,56 @@ margin-top: 40px;
 				}
 			}
 			
-			div.tableBG{
+			
+			table{
 				position: absolute;
-					top: 160px;
+				top: 160px;
+				left:20px;
+				width: 1093px;	
+				margin: 0 auto;
+				
+				thead th{
+					/* PLAYER: */
+					font-family: ManifoldCF-ExtraBold;
+					font-size: 20px;
+					color: #4A4A4A;
+					line-height: 40px;
+					text-align: left;
+				}
+				
+				tbody {
+					tr:nth-child(odd){
+						background: rgba(255,255,255,0.20);
 						
-					background-color: #000;
-					width: 1142px;
-				table{
-					
-					width: 1093px;	
-					margin: 0 auto;
-					
-					thead th{
-						/* PLAYER: */
-						font-family: ManifoldCF-ExtraBold;
-						font-size: 20px;
-						color: #4A4A4A;
-						line-height: 40px;
-						text-align: left;
-					}
-					
-					tbody {
-						tr:nth-child(odd){
-							background: rgba(255,255,255,0.20);
+						td{
+							font-family: ManifoldCF-Regular;
+							font-size: 20px;
+							color: #fff;
+							padding: 5px 10px;
+						}
+						td:first-child{
+							border-top-left-radius: 5px;
+							border-bottom-left-radius: 5px;
 							
-							td{
-								font-family: ManifoldCF-Regular;
-								font-size: 20px;
-								color: #fff;
-								padding: 5px 10px;
-							}
-							td:first-child{
-								border-top-left-radius: 5px;
-								border-bottom-left-radius: 5px;
-								
-							}
-							
-							td:last-child{
-								border-top-right-radius: 5px;
-								border-bottom-right-radius: 5px;
-								
-							}
 						}
 						
-						tr:nth-child(even){
-							td{
-								font-family: ManifoldCF-Regular;
-								font-size: 20px;
-								color: #fff;
-								padding: 5px 10px;
-							}
+						td:last-child{
+							border-top-right-radius: 5px;
+							border-bottom-right-radius: 5px;
+							
+						}
+					}
+					
+					tr:nth-child(even){
+						td{
+							font-family: ManifoldCF-Regular;
+							font-size: 20px;
+							color: #fff;
+							padding: 5px 10px;
 						}
 					}
 				}
+				
 			}
 		}
 	}
