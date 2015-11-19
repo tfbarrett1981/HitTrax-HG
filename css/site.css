@@ -9,6 +9,11 @@
   src: url('../webfonts/Manifold CF/ManifoldCF-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../webfonts/Manifold CF/ManifoldCF-Light-webfont.woff') format('woff'), url('../webfonts/Manifold CF/ManifoldCF-Light-webfont.ttf') format('truetype'), url('../webfonts/Manifold CF/ManifoldCF-Light-webfont.svg#webfont') format('svg');
 }
 @font-face {
+  font-family: 'ManifoldCF-Bold';
+  src: url('../webfonts/Manifold CF/ManifoldCF-Bold-webfont.eot');
+  src: url('../webfonts/Manifold CF/ManifoldCF-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../webfonts/Manifold CF/ManifoldCF-Bold-webfont.woff') format('woff'), url('../webfonts/Manifold CF/ManifoldCF-Bold-webfont.ttf') format('truetype'), url('../webfonts/Manifold CF/ManifoldCF-Bold-webfont.svg#webfont') format('svg');
+}
+@font-face {
   font-family: 'ManifoldCF-ExtraBold';
   src: url('../webfonts/Manifold CF/ManifoldCF-ExtraBold-webfont.eot');
   src: url('../webfonts/Manifold CF/ManifoldCF-ExtraBoldwebfont.eot?#iefix') format('embedded-opentype'), url('../webfonts/Manifold CF/ManifoldCF-ExtraBold-webfont.woff') format('woff'), url('../webfonts/Manifold CF/ManifoldCF-ExtraBold-webfont.ttf') format('truetype'), url('../webfonts/Manifold CF/ManifoldCF-ExtraBold-webfont.svg#webfont') format('svg');
@@ -643,7 +648,7 @@ h2#forgotPasswordReset {
   bottom: 55px;
 }
 .owner-template .facility-leaderboard h2#pageTitle {
-  background: url(../img/facility-leaderboard.png) no-repeat center center;
+  background: url(../img/FACILITY-LEADERBOARD.png) no-repeat center center;
   text-indent: -9999px;
   height: 37px;
   margin-top: 40px;
