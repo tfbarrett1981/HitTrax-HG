@@ -530,6 +530,7 @@ hr {
 }
 #foundAccount img {
   margin: 0 auto;
+  display: block;
 }
 #noAccount {
   /* Sorry, we can’t find: */
@@ -542,6 +543,7 @@ hr {
 }
 #noAccount img {
   margin: 0 auto;
+  display: block;
 }
 #resetSuccess {
   /* We’ve found your Hit: */
