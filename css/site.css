@@ -13,9 +13,14 @@
   src: url('../webfonts/Manifold CF/ManifoldCF-ExtraBold-webfont.eot');
   src: url('../webfonts/Manifold CF/ManifoldCF-ExtraBoldwebfont.eot?#iefix') format('embedded-opentype'), url('../webfonts/Manifold CF/ManifoldCF-ExtraBold-webfont.woff') format('woff'), url('../webfonts/Manifold CF/ManifoldCF-ExtraBold-webfont.ttf') format('truetype'), url('../webfonts/Manifold CF/ManifoldCF-ExtraBold-webfont.svg#webfont') format('svg');
 }
+@font-face {
+  font-family: 'ManifoldCF-DemiBold';
+  src: url('../webfonts/Manifold CF/ManifoldCF-DemiBold-webfont.eot');
+  src: url('../webfonts/Manifold CF/ManifoldCF-DemiBoldwebfont.eot?#iefix') format('embedded-opentype'), url('../webfonts/Manifold CF/ManifoldCF-DemiBold-webfont.woff') format('woff'), url('../webfonts/Manifold CF/ManifoldCF-DemiBold-webfont.ttf') format('truetype'), url('../webfonts/Manifold CF/ManifoldCF-DemiBold-webfont.svg#webfont') format('svg');
+}
 html {
   min-height: 100%;
-  min-width: 915px;
+  min-width: 1146px;
   position: relative;
 }
 body {
@@ -23,7 +28,7 @@ body {
 }
 #content {
   margin: 0 auto;
-  min-width: 915px;
+  min-width: 1146px;
   font-family: ManifoldCF-Regular;
   font-size: 15.81px;
   color: #FFFFFF;
@@ -254,7 +259,8 @@ h2#forgotPasswordReset {
   transition: all 500ms ease;
   background: rgba(44, 44, 44, 0.3);
 }
-/* PLAYER TEMPLATE */
+/* END PLAYER TEMPLATE */
+/* PLAYER SUBSCRIBED TEMPLATE */
 .player-subscribed-template #dateLocation {
   width: 942px;
   margin: 0 auto;
@@ -437,6 +443,480 @@ h2#forgotPasswordReset {
   bottom: 100px;
   left: 0px;
 }
+/* END PLAYER SUBSCRIBED TEMPLATE */
+/* OWNER TEMPLATE */
+.owner-template h2#pageTitle {
+  background: url(../img/facility-admin.png) no-repeat center center;
+  text-indent: -9999px;
+  height: 50px;
+  margin-top: 40px;
+}
+.owner-template .tab {
+  background: url(../img/owner-tab.png) #2c2c2c no-repeat;
+  width: 1142px;
+  height: 407px;
+  margin: 0 auto;
+  position: relative;
+}
+.owner-template .tab img.editInfo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.owner-template .tab h3.joinHitrax {
+  /* Join HitTrax...: */
+  width: 526px;
+  height: 30px;
+  background: url(../img/join-hitrax.png) no-repeat;
+  text-indent: -9999px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.owner-template .tab section.adminTools {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+}
+.owner-template .tab section.adminTools h3 {
+  text-indent: -9999px;
+  background: url(../img/FACILITY-ADMIN-TOOLS.png) no-repeat;
+  width: 255px;
+  height: 19px;
+}
+.owner-template .tab section.adminTools ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.owner-template .tab section.adminTools ul li {
+  width: 340px;
+  height: 60px;
+  /* Frame: */
+  border: 3px solid #FFFFFF;
+  border-radius: 5px;
+  /* FACILITY FORUM: */
+  font-family: ManifoldCF-Bold;
+  font-size: 21px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  line-height: 60px;
+  float: left;
+  margin-right: 20px;
+  vertical-align: middle;
+  text-align: center;
+}
+.owner-template .tab section.adminTools ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+.owner-template .tab section.resources {
+  position: absolute;
+  top: 220px;
+  left: 20px;
+}
+.owner-template .tab section.resources h3 {
+  text-indent: -9999px;
+  background: url(../img/FACILITY-RESOURCES.png) no-repeat;
+  width: 234px;
+  height: 19px;
+}
+.owner-template .tab section.resources ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.owner-template .tab section.resources ul li {
+  width: 340px;
+  height: 60px;
+  /* Frame: */
+  border: 3px solid #FFFFFF;
+  border-radius: 5px;
+  /* FACILITY FORUM: */
+  font-family: ManifoldCF-Bold;
+  font-size: 21px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  line-height: 60px;
+  float: left;
+  margin-right: 20px;
+  vertical-align: middle;
+  text-align: center;
+}
+.owner-template .tab section.resources ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+.owner-template .tab h4.facility {
+  /* Name: */
+  font-family: ManifoldCF-DemiBold;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 20px;
+  position: absolute;
+  top: 20px;
+  left: 75px;
+  margin: 0;
+}
+.owner-template .tab h5.location {
+  /* Info: */
+  font-family: ManifoldCF-DemiBold;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 23px;
+  position: absolute;
+  top: 43px;
+  left: 75px;
+  margin: 0;
+}
+.owner-template .callout {
+  /* Bar Background Copy: */
+  background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
+  height: 550px;
+}
+.owner-template .callout div {
+  width: 1142px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+.owner-template .callout div h4 {
+  /* YOU’RE MISSING OUT O: */
+  /* YOU’RE MISSING OUT O: */
+  margin-top: 0;
+  font-family: ManifoldCF-Bold;
+  font-size: 26px;
+  color: #2C2C2C;
+  line-height: 36px;
+  width: 376px;
+  padding-top: 70px;
+}
+.owner-template .callout div p {
+  /* Text: */
+  font-family: ManifoldCF-Regular;
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 30px;
+  width: 376px;
+}
+.owner-template .callout div ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+  font-family: ManifoldCF-Regular;
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 30px;
+  width: 376px;
+}
+.owner-template .callout div .button {
+  /* Frame: */
+  border: 3px solid #2C2C2C;
+  border-radius: 5px;
+  /* JOIN HITTRAX STATSCE: */
+  font-family: ManifoldCF-Bold;
+  font-size: 21px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  width: 180px;
+  height: 60px;
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+  line-height: 60px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.owner-template .callout div .button:hover {
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background: rgba(44, 44, 44, 0.3);
+}
+.owner-template .callout div img {
+  position: absolute;
+  right: 0;
+  bottom: 55px;
+}
+.owner-template .facility-leaderboard h2#pageTitle {
+  background: url(../img/facility-leaderboard.png) no-repeat center center;
+  text-indent: -9999px;
+  height: 37px;
+  margin-top: 40px;
+}
+.owner-template .facility-leaderboard .tab {
+  min-height: 1350px;
+}
+.owner-template .facility-leaderboard .tab h4.topPast {
+  background: url(../img/TOP-25-PAST.png) no-repeat;
+  width: 372px;
+  height: 28px;
+  text-indent: -9999px;
+  position: absolute;
+  top: 20px;
+  margin-top: 0;
+  left: 20px;
+}
+.owner-template .facility-leaderboard .tab ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 20px;
+  top: 85px;
+}
+.owner-template .facility-leaderboard .tab ul li {
+  width: 260px;
+  float: left;
+  margin-right: 20px;
+}
+.owner-template .facility-leaderboard .tab ul li h6 {
+  margin: 0;
+  /* Label: */
+  font-family: ManifoldCF-Bold;
+  font-size: 16px;
+  color: #E76A38;
+  letter-spacing: 1.04px;
+  line-height: 28px;
+}
+.owner-template .facility-leaderboard .tab ul li select {
+  width: 260px;
+  /* Frame: */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  height: 40px;
+  border: 0;
+}
+.owner-template .facility-leaderboard .tab div.tableBG {
+  position: absolute;
+  top: 160px;
+  background-color: #000;
+  width: 1142px;
+}
+.owner-template .facility-leaderboard .tab div.tableBG table {
+  width: 1093px;
+  margin: 0 auto;
+}
+.owner-template .facility-leaderboard .tab div.tableBG table thead th {
+  /* PLAYER: */
+  font-family: ManifoldCF-ExtraBold;
+  font-size: 20px;
+  color: #4A4A4A;
+  line-height: 40px;
+  text-align: left;
+}
+.owner-template .facility-leaderboard .tab div.tableBG table tbody tr:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.2);
+}
+.owner-template .facility-leaderboard .tab div.tableBG table tbody tr:nth-child(odd) td {
+  font-family: ManifoldCF-Regular;
+  font-size: 20px;
+  color: #fff;
+  padding: 5px 10px;
+}
+.owner-template .facility-leaderboard .tab div.tableBG table tbody tr:nth-child(odd) td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.owner-template .facility-leaderboard .tab div.tableBG table tbody tr:nth-child(odd) td:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.owner-template .facility-leaderboard .tab div.tableBG table tbody tr:nth-child(even) td {
+  font-family: ManifoldCF-Regular;
+  font-size: 20px;
+  color: #fff;
+  padding: 5px 10px;
+}
+/* END OWNER TEMPLATE */
+/* OWNER SUBSCRIBED TEMPLATE */
+.owner-subscribed-template #dateLocation {
+  width: 942px;
+  margin: 0 auto;
+}
+.owner-subscribed-template h2#pageTitle {
+  background: url(../img/my-last-batting-session.png) no-repeat center center;
+  text-indent: -9999px;
+  height: 50px;
+  margin-top: 40px;
+}
+.owner-subscribed-template hr:first-child {
+  float: left;
+  margin-top: 13px;
+  width: 200px;
+}
+.owner-subscribed-template hr:last-child {
+  float: right;
+  margin-top: 13px;
+  width: 200px;
+}
+.owner-subscribed-template h3 {
+  /* HR Left: */
+  /* Date/Location: */
+  font-family: ManifoldCF-Regular;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  line-height: 24px;
+  /* HR Right: */
+  text-align: center;
+  width: 542px;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.owner-subscribed-template .tab {
+  background: url(../img/player-tab.png) no-repeat;
+  width: 1142px;
+  height: 608px;
+  margin: 0 auto;
+}
+.owner-subscribed-template .callout-mobile {
+  /* Bar Background Copy: */
+  background: url(../img/hittrax-bgvideo-blur-color.png);
+  background-size: cover;
+  height: 600px;
+}
+.owner-subscribed-template .callout-mobile #callout-wrapper {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+.owner-subscribed-template .callout-mobile #callout-wrapper img.app-icon {
+  margin-top: 120px;
+}
+.owner-subscribed-template .callout-mobile #callout-wrapper h4 {
+  text-indent: -9999px;
+  background: url(../img/go-mobile.png) no-repeat;
+  width: 267px;
+  height: 41px;
+}
+.owner-subscribed-template .callout-mobile #callout-wrapper p {
+  /* Body Copy: */
+  font-family: ManifoldCF-Regular;
+  font-size: 18px;
+  color: #000000;
+  line-height: 24px;
+  width: 495px;
+}
+.owner-subscribed-template .callout-mobile #callout-wrapper h5 {
+  /* SubHead: */
+  font-family: ManifoldCF-Regular;
+  font-size: 21px;
+  color: #000000;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+.owner-subscribed-template .callout-mobile #callout-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.owner-subscribed-template .callout-mobile #callout-wrapper ul li {
+  float: left;
+  margin-right: 20px;
+  width: 142px;
+  height: 48px;
+}
+.owner-subscribed-template .callout-mobile #callout-wrapper ul li a {
+  display: block;
+  height: 100%;
+}
+.owner-subscribed-template .callout-mobile #callout-wrapper ul li a:hover {
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background: rgba(44, 44, 44, 0.3);
+}
+.owner-subscribed-template .callout-mobile #callout-wrapper ul li:first-child {
+  background: url(../img/apple-app-store.png) no-repeat;
+}
+.owner-subscribed-template .callout-mobile #callout-wrapper ul li:last-child {
+  background: url(../img/google-play.png) no-repeat;
+}
+.owner-subscribed-template .callout-mobile #callout-wrapper img.phone {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+.owner-subscribed-template .callout-desktop {
+  background-size: cover;
+  height: 600px;
+}
+.owner-subscribed-template .callout-desktop #callout-wrapper {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+.owner-subscribed-template .callout-desktop #callout-wrapper aside {
+  width: 343px;
+  float: right;
+}
+.owner-subscribed-template .callout-desktop #callout-wrapper aside img.app-icon {
+  margin-top: 100px;
+}
+.owner-subscribed-template .callout-desktop #callout-wrapper aside h4 {
+  text-indent: -9999px;
+  background: url(../img/desktop-app-title.png) no-repeat;
+  width: 323px;
+  height: 41px;
+}
+.owner-subscribed-template .callout-desktop #callout-wrapper aside p {
+  /* Body Copy: */
+  font-family: ManifoldCF-Regular;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 24px;
+  width: 343px;
+}
+.owner-subscribed-template .callout-desktop #callout-wrapper aside h5 {
+  /* SubHead: */
+  font-family: ManifoldCF-Regular;
+  font-size: 21px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+.owner-subscribed-template .callout-desktop #callout-wrapper aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.owner-subscribed-template .callout-desktop #callout-wrapper aside ul li {
+  float: left;
+  margin-right: 20px;
+  width: 142px;
+  height: 48px;
+  background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
+  padding: 2px;
+}
+.owner-subscribed-template .callout-desktop #callout-wrapper aside ul li a {
+  display: block;
+  height: 100%;
+  background-color: #2c2c2c;
+  text-decoration: none;
+  /* WINDOWS: */
+  font-family: ManifoldCF-ExtraBold;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 48px;
+  vertical-align: middle;
+  text-align: center;
+}
+.owner-subscribed-template .callout-desktop #callout-wrapper img.desktop {
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
+}
+/* END OWNER SUBSCRIBED TEMPLATE */
 hr {
   color: #fff;
   width: 150px;
