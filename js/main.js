@@ -1,5 +1,5 @@
-$( document ).ready(function() {
-	$(".forgot-password-template .buttonBorder").click(function(e){
+jQuery( document ).ready(function($) {
+	$(".page-template-page-forgot .buttonBorder").click(function(e){
 		$(this).hide();
 		var items = Array("foundAccount", "noAccount");
 		
@@ -7,7 +7,7 @@ $( document ).ready(function() {
 		$("#" + item).removeClass("hidden");
 	});
 	
-	$(".reset-password-template .buttonBorder").click(function(e){
+	$(".page-template-page-reset .buttonBorder").click(function(e){
 		
 		var items = Array("resetSuccess", "resetFail");
 		

@@ -206,7 +206,7 @@ margin-top: 40px;
 }
 
 /* PLAYER TEMPLATE */
-.player-template {
+.page-template-page-player{
 	
 	#dateLocation{
 		width:942px;
@@ -317,7 +317,7 @@ margin-top: 40px;
 /* END PLAYER TEMPLATE */
 
 /* PLAYER SUBSCRIBED TEMPLATE */
-.player-subscribed-template {
+.page-template-page-player-subscribed {
 	
 	#dateLocation{
 		width:942px;
@@ -540,7 +540,7 @@ margin-top: 40px;
 /* END PLAYER SUBSCRIBED TEMPLATE */
 
 /* OWNER TEMPLATE */
-.owner-template {
+.page-template-page-owner {
 	
 	h2#pageTitle{
 	background: url(../img/facility-admin.png) no-repeat center center;
@@ -878,59 +878,203 @@ margin-top: 40px;
 /* END OWNER TEMPLATE */
 
 /* OWNER SUBSCRIBED TEMPLATE */
-.owner-subscribed-template {
-	
-	#dateLocation{
-		width:942px;
-		margin:0 auto;
-	}
+.page-template-page-owner-subscribed {
 	
 	h2#pageTitle{
-	background: url(../img/my-last-batting-session.png) no-repeat center center;
+	background: url(../img/facility-admin.png) no-repeat center center;
 	text-indent: -9999px;
 	height: 50px;
 	margin-top: 40px;	
 	}
 	
-	hr:first-child{
-		float: left;
-		margin-top: 13px;
-		width:200px;
-	}
-	
-	hr:last-child{
-		float:right;
-		margin-top: 13px;	
-		width:200px;
-	}
-	h3{
-		/* HR Left: */
-	/* Date/Location: */
-	font-family: ManifoldCF-Regular;
-	font-size: 20px;
-	color: #FFFFFF;
-	letter-spacing: 2px;
-	line-height: 24px;
-	/* HR Right: */
-	text-align: center;
-	width: 542px;
-	margin: 0;
-	padding: 0;
-	float: left;
-	}
 	
 	.tab{
-		background: url(../img/player-tab.png) no-repeat;
+		
+		background: url(../img/owner-tab.png) #2c2c2c no-repeat;
 		width:1142px;
-		height: 608px;
+		height: 534px;
 		margin: 0 auto;
+		position: relative;
+		
+		img.editInfo{
+			position: absolute;
+			top:15px;
+			left: 15px;
+		}
+		
+		h3.joinHitrax{
+			/* Join HitTrax...: */
+			width: 526px;
+			height: 30px;
+			background: url(../img/join-hitrax.png) no-repeat;
+			text-indent: -9999px;
+			position: absolute;;
+			top: 10px;
+			right: 20px;
+		}
+		
+		section.adminTools{
+			position: absolute;
+			top:80px;
+			left: 20px;
+			
+			h3{
+				text-indent: -9999px;
+				background: url(../img/FACILITY-ADMIN-TOOLS.png) no-repeat;
+				width: 255px;
+				height: 19px;				
+			}
+			
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li{
+					width: 340px;
+					height: 60px;
+					/* Frame: */
+					border: 3px solid #FFFFFF;
+					border-radius: 5px;
+					/* FACILITY FORUM: */
+					font-family: ManifoldCF-Bold;
+					font-size: 21px;
+					color: #FFFFFF;
+					letter-spacing: 1px;
+					line-height: 60px;
+					float: left;
+					margin-right: 20px;
+					vertical-align: middle;
+					text-align: center;
+					
+					a{
+						color: #fff;
+						text-decoration: none;
+						display: block;
+					}
+				}
+			}
+		}
+		
+		section.resources{
+			position: absolute;
+			top:220px;
+			left: 20px;
+			h3{
+				text-indent: -9999px;
+				background: url(../img/FACILITY-RESOURCES.png) no-repeat;
+				width: 234px;
+				height: 19px;	
+			}
+			
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li{
+					width: 340px;
+					height: 60px;
+					/* Frame: */
+					border: 3px solid #FFFFFF;
+					border-radius: 5px;
+					/* FACILITY FORUM: */
+					font-family: ManifoldCF-Bold;
+					font-size: 21px;
+					color: #FFFFFF;
+					letter-spacing: 1px;
+					line-height: 60px;
+					float: left;
+					margin-right: 20px;
+					vertical-align: middle;
+					text-align: center;
+					
+					a{
+						color: #fff;
+						text-decoration: none;
+						display: block;
+					}
+				}
+			}
+			
+		}
+		section.advanced
+		{
+			position: absolute;
+			top:370px;
+			left: 20px;
+			h3{
+				text-indent: -9999px;
+				background: url(../img/ADVANCED-SUBSCRIPTION-FEATURES.png) no-repeat;
+				width: 412px;
+				height: 28px;	
+			}
+			
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li{
+					width: 340px;
+					height: 60px;
+					/* Frame: */
+					background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
+					
+					border-radius: 5px;
+					/* FACILITY FORUM: */
+					font-family: ManifoldCF-Bold;
+					font-size: 21px;
+					color: #FFFFFF;
+					letter-spacing: 1px;
+					line-height: 60px;
+					float: left;
+					margin-right: 20px;
+					vertical-align: middle;
+					text-align: center;
+					padding: 3px;
+					
+					a{
+						color: #fff;
+						background-color: #000;
+						text-decoration: none;
+						display: block;
+						
+					}
+					
+					
+				}
+			}
+			
+		}
+		
+		h4.facility{
+			/* Name: */
+			font-family: ManifoldCF-DemiBold;
+			font-size: 24px;
+			color: #FFFFFF;
+			line-height: 20px;
+			position: absolute;
+			top: 20px;
+			left: 75px;
+			margin: 0;
+		}
+		
+		h5.location{
+			/* Info: */
+			font-family: ManifoldCF-DemiBold;
+			font-size: 16px;
+			color: #FFFFFF;
+			line-height: 23px;
+			position: absolute;
+			top: 43px;
+			left: 75px;
+			margin: 0;
+		}
 	}
 	
-	.callout-mobile{
+	.callout{
 		/* Bar Background Copy: */
 		background: url(../img/hittrax-bgvideo-blur-color.png);
 		background-size: cover;
-		height: 600px;
+		height: 540px;
 	
 		#callout-wrapper{
 			width:1100px;
@@ -939,13 +1083,13 @@ margin-top: 40px;
 			height: 100%;
 			
 			img.app-icon{
-				margin-top: 120px;
+				margin-top: 90px;
 			}
 			
 			h4{
 				text-indent: -9999px;
-				background: url(../img/go-mobile.png) no-repeat;
-				width: 267px;
+				background: url(../img/desktop-app-title.png) no-repeat;
+				width: 323px;
 				height: 41px;
 			}
 			
@@ -955,7 +1099,7 @@ margin-top: 40px;
 				font-size: 18px;
 				color: #000000;
 				line-height: 24px;
-				width: 495px;
+				width: 343px;
 			}
 			h5{
 				/* SubHead: */
@@ -975,130 +1119,520 @@ margin-top: 40px;
 					margin-right: 20px;
 					width: 142px;
 					height: 48px;
-					
+					background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
+					padding:2px;
+					border-radius: 3px;
 					a{
 						display: block;
 						height: 100%;
+						text-decoration: none;
+						/* WINDOWS: */
+						font-family: ManifoldCF-ExtraBold;
+						font-size: 24px;
+						color: #FFFFFF;
+						line-height: 48px;
+						vertical-align: middle;
+						text-align: center;
+						
 					}
+					
 					a:hover{
-						background: rgba(44,44,44,0.30);
+						background: rgba(44,44,44,0.50);
 						-webkit-transition: all 500ms ease;
 						-moz-transition: all 500ms ease;
 						-ms-transition: all 500ms ease;
 						-o-transition: all 500ms ease;
 						transition: all 500ms ease;
-						background: rgba(44,44,44,0.30);
-						
+						background: rgba(44,44,44,0.50);
 					}
 				}
 				
 				li:first-child{
-					background: url(../img/apple-app-store.png) no-repeat;
 				}
 				li:last-child{
-					background: url(../img/google-play.png) no-repeat;
 				}
 				
 				
 			}
 			
-			img.phone{
+			img.desktop{
 				position: absolute;
-				bottom: 0;
-				right: 50px;	
+				bottom: 50px;
+				right: 10px;	
 			}
 		}
 		
 	}
 	
-	.callout-desktop{
+	.facility-leaderboard{
+		h2#pageTitle{
+			background: url(../img/FACILITY-LEADERBOARD.png) no-repeat center center;
+			text-indent: -9999px;
+			height: 37px;
+			margin-top: 40px;	
+		}
 		
-		
-		background-size: cover;
-		height: 600px;
-	
-		#callout-wrapper{
-			width:1100px;
-			margin: 0 auto;
-			position: relative;
-			height: 100%;
+		.tab{			
+			min-height: 1350px; 
 			
-			aside{
+			h4.topPast{
+				background: url(../img/TOP-25-PAST.png) no-repeat;
+				width: 372px;
+				height: 28px;
+				text-indent: -9999px;
+				position: absolute;
+				top: 20px;
+				margin-top: 0;
+				left: 20px;
+			}
+			
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				left: 20px;
+				top: 85px;
 				
-				width: 343px;
-				float: right;
-				img.app-icon{
-					margin-top: 100px;
-				}
-				
-				h4{
-					text-indent: -9999px;
-					background: url(../img/desktop-app-title.png) no-repeat;
-					width: 323px;
-					height: 41px;
-				}
-				
-				p{
-					/* Body Copy: */
-					font-family: ManifoldCF-Regular;
-					font-size: 18px;
-					color: #FFFFFF;
-					line-height: 24px;
-					width: 343px;
-				}
-				h5{
-					/* SubHead: */
-					font-family: ManifoldCF-Regular;
-					font-size: 21px;
-					color: #FFFFFF;
-					letter-spacing: 1px;
-					line-height: 24px;
-				}
-				ul{
-					list-style: none;
-					margin: 0;
-					padding: 0;
+				li{
+					width: 260px;
+					float: left;
+					margin-right: 20px;	
 					
-					li{
-						float:left;
-						margin-right: 20px;
-						width: 142px;
-						height: 48px;
-						background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
-						padding:2px;
-						a{
-							display: block;
-							height: 100%;
-							background-color: #2c2c2c;
-							text-decoration: none;
-							/* WINDOWS: */
-							font-family: ManifoldCF-ExtraBold;
-							font-size: 24px;
-							color: #FFFFFF;
-							line-height: 48px;
-							vertical-align: middle;
-							text-align: center;
+					h6{
+						margin: 0;
+						/* Label: */
+						font-family: ManifoldCF-Bold;
+						font-size: 16px;
+						color: #E76A38;
+						letter-spacing: 1.04px;
+						line-height: 28px;
+						
+						
+					}
+					select{
+						width: 260px;
+						/* Frame: */
+						background: rgba(255,255,255,0.10);
+						border-radius: 5px;
+						height: 40px;
+						border: 0;
+					}
+				}
+			}
+			
+			
+			table{
+				position: absolute;
+				top: 160px;
+				left:20px;
+				width: 1093px;	
+				margin: 0 auto;
+				
+				thead th{
+					/* PLAYER: */
+					font-family: ManifoldCF-ExtraBold;
+					font-size: 20px;
+					color: #4A4A4A;
+					line-height: 40px;
+					text-align: left;
+				}
+				
+				tbody {
+					tr:nth-child(odd){
+						background: rgba(255,255,255,0.20);
+						
+						td{
+							font-family: ManifoldCF-Regular;
+							font-size: 20px;
+							color: #fff;
+							padding: 5px 10px;
+						}
+						td:first-child{
+							border-top-left-radius: 5px;
+							border-bottom-left-radius: 5px;
+							
+						}
+						
+						td:last-child{
+							border-top-right-radius: 5px;
+							border-bottom-right-radius: 5px;
 							
 						}
 					}
 					
-					li:first-child{
+					tr:nth-child(even){
+						td{
+							font-family: ManifoldCF-Regular;
+							font-size: 20px;
+							color: #fff;
+							padding: 5px 10px;
+						}
 					}
-					li:last-child{
-					}
-				
 				}
+				
 			}
-			
-			img.desktop{
-				position: absolute;
-				bottom: 100px;;
-				left: 0px;	
-			}
-		}		
+		}
 	}
 }
 /* END OWNER SUBSCRIBED TEMPLATE */
+
+/* LEADERBOARD TEMPLATE */
+.page-template-page-leaderboard {
+	
+	h2#pageTitle{
+	background: url(../img/facility-admin.png) no-repeat center center;
+	text-indent: -9999px;
+	height: 50px;
+	margin-top: 40px;	
+	}
+	
+	
+	.tab{
+		
+		background: url(../img/owner-tab.png) #2c2c2c no-repeat;
+		width:1142px;
+		height: 407px;
+		margin: 0 auto;
+		position: relative;
+		
+		img.editInfo{
+			position: absolute;
+			top:15px;
+			left: 15px;
+		}
+		
+		h3.joinHitrax{
+			/* Join HitTrax...: */
+			width: 526px;
+			height: 30px;
+			background: url(../img/join-hitrax.png) no-repeat;
+			text-indent: -9999px;
+			position: absolute;;
+			top: 10px;
+			right: 20px;
+		}
+		
+		section.adminTools{
+			position: absolute;
+			top:80px;
+			left: 20px;
+			
+			h3{
+				text-indent: -9999px;
+				background: url(../img/FACILITY-ADMIN-TOOLS.png) no-repeat;
+				width: 255px;
+				height: 19px;				
+			}
+			
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li{
+					width: 340px;
+					height: 60px;
+					/* Frame: */
+					border: 3px solid #FFFFFF;
+					border-radius: 5px;
+					/* FACILITY FORUM: */
+					font-family: ManifoldCF-Bold;
+					font-size: 21px;
+					color: #FFFFFF;
+					letter-spacing: 1px;
+					line-height: 60px;
+					float: left;
+					margin-right: 20px;
+					vertical-align: middle;
+					text-align: center;
+					
+					a{
+						color: #fff;
+						text-decoration: none;
+						display: block;
+					}
+				}
+			}
+		}
+		
+		section.resources{
+			position: absolute;
+			top:220px;
+			left: 20px;
+			h3{
+				text-indent: -9999px;
+				background: url(../img/FACILITY-RESOURCES.png) no-repeat;
+				width: 234px;
+				height: 19px;	
+			}
+			
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li{
+					width: 340px;
+					height: 60px;
+					/* Frame: */
+					border: 3px solid #FFFFFF;
+					border-radius: 5px;
+					/* FACILITY FORUM: */
+					font-family: ManifoldCF-Bold;
+					font-size: 21px;
+					color: #FFFFFF;
+					letter-spacing: 1px;
+					line-height: 60px;
+					float: left;
+					margin-right: 20px;
+					vertical-align: middle;
+					text-align: center;
+					
+					a{
+						color: #fff;
+						text-decoration: none;
+						display: block;
+					}
+				}
+			}
+			
+		}
+		h4.facility{
+			/* Name: */
+			font-family: ManifoldCF-DemiBold;
+			font-size: 24px;
+			color: #FFFFFF;
+			line-height: 20px;
+			position: absolute;
+			top: 20px;
+			left: 75px;
+			margin: 0;
+		}
+		
+		h5.location{
+			/* Info: */
+			font-family: ManifoldCF-DemiBold;
+			font-size: 16px;
+			color: #FFFFFF;
+			line-height: 23px;
+			position: absolute;
+			top: 43px;
+			left: 75px;
+			margin: 0;
+		}
+	}
+	
+	.callout{
+		/* Bar Background Copy: */
+		background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
+		height: 260px;
+	
+		div{
+			width: 1142px;
+			margin: 0 auto;
+			position: relative;
+			height: 100%;
+				
+			aside{
+				float:left;
+				width:49%;
+				text-align: center;
+				margin-top: 20px;
+			}
+			aside:first-child{
+				border-right: solid 1px #fff;
+			}
+			h6{
+				/* YOU’RE MISSING OUT O: */
+				/* YOU’RE MISSING OUT O: */
+				/* Text: */
+				font-family: ManifoldCF-Bold;
+				font-size: 21px;
+				color: #2C2C2C;
+				line-height: 28px;
+				width: 80%;
+				font-weight: bold;
+				margin: 0 auto;
+				padding-top: 10px;
+			}
+			
+			p{
+				/* Text: */
+				font-family: ManifoldCF-Regular;
+				font-size: 21px;
+				color: #FFFFFF;
+				line-height: 30px;
+				width:80%;
+				margin: 0 auto;
+				
+			}
+			
+			ul{
+				padding: 0;
+				margin: 0;
+				margin-left: 20px;	
+				font-family: ManifoldCF-Regular;
+				font-size: 20px;
+				color: #FFFFFF;
+				line-height: 30px;
+				width: 376px;
+			}
+			
+			.button{
+				/* Frame: */
+				border: 3px solid #2C2C2C;
+				border-radius: 5px;
+				/* JOIN HITTRAX STATSCE: */
+				font-family: ManifoldCF-Bold;
+				font-size: 21px;
+				color: #FFFFFF;
+				letter-spacing: 1px;
+				width: 220px;
+				height: 54px;
+				text-align: center;
+				display: block;
+				vertical-align: middle;
+				line-height: 54px;
+				text-decoration: none;
+				margin: 0 auto;
+				margin-top: 20px;
+				
+			}
+			
+			.button:hover{
+				background: rgba(44,44,44,0.30);
+				-webkit-transition: all 500ms ease;
+				-moz-transition: all 500ms ease;
+				-ms-transition: all 500ms ease;
+				-o-transition: all 500ms ease;
+				transition: all 500ms ease;
+				background: rgba(44,44,44,0.30);
+			}
+			
+			img{
+				position: absolute;
+				right: 0;
+				bottom: 55px;
+			}
+		}
+	}
+	
+	.facility-leaderboard{
+		h2#pageTitle{
+			background: url(../img/FACILITY-LEADERBOARD.png) no-repeat center center;
+			text-indent: -9999px;
+			height: 37px;
+			margin-top: 40px;	
+		}
+		
+		section.filters{
+			width: 1142px;
+			margin: 0 auto;
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				margin-bottom: 20px;
+				
+				li{
+					width: 260px;
+					float: left;
+					margin-right: 20px;	
+					
+					h6{
+						margin: 0;
+						/* Label: */
+						font-family: ManifoldCF-Bold;
+						font-size: 16px;
+						color: #E76A38;
+						letter-spacing: 1.04px;
+						line-height: 28px;
+						
+						
+					}
+					select{
+						width: 260px;
+						/* Frame: */
+						background: rgba(255,255,255,0.10);
+						border-radius: 5px;
+						height: 40px;
+						border: 0;
+					}
+				}
+			}
+		}
+		
+		.tab{			
+			min-height: 1350px; 
+			
+			h4.topPast{
+				background: url(../img/TOP-25-PAST.png) no-repeat;
+				width: 372px;
+				height: 28px;
+				text-indent: -9999px;
+				position: absolute;
+				top: 20px;
+				margin-top: 0;
+				left: 20px;
+			}
+			
+			
+			
+			
+			table{
+				position: absolute;
+				top: 70px;
+				left:20px;
+				width: 1093px;	
+				margin: 0 auto;
+				
+				thead th{
+					/* PLAYER: */
+					font-family: ManifoldCF-ExtraBold;
+					font-size: 20px;
+					color: #4A4A4A;
+					line-height: 40px;
+					text-align: left;
+				}
+				
+				tbody {
+					tr:nth-child(odd){
+						background: rgba(255,255,255,0.20);
+						
+						td{
+							font-family: ManifoldCF-Regular;
+							font-size: 20px;
+							color: #fff;
+							padding: 5px 10px;
+						}
+						td:first-child{
+							border-top-left-radius: 5px;
+							border-bottom-left-radius: 5px;
+							
+						}
+						
+						td:last-child{
+							border-top-right-radius: 5px;
+							border-bottom-right-radius: 5px;
+							
+						}
+					}
+					
+					tr:nth-child(even){
+						td{
+							font-family: ManifoldCF-Regular;
+							font-size: 20px;
+							color: #fff;
+							padding: 5px 10px;
+						}
+					}
+				}
+				
+			}
+		}
+	}
+}
+/* END LEADERBOARD TEMPLATE */
+
 
 
 hr{
@@ -1179,7 +1713,7 @@ margin-bottom:30px;
 	outline: none;
 }
 
-.reset-password-template .buttonBorder{
+.page-template-page-reset .buttonBorder{
 	width:265px;
 }
 

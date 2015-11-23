@@ -1,38 +1,18 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Place favicon.ico in the root directory -->
+<?php 
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/site.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body class="page-template-page-owner-subscribed">
-        
-            
-        <header>
-            <div id="gradient">
-               
-            </div>
-             <img id="logo" src="img/Logo.png" />
-            <nav id="topNav">
-                <ul>
-                    <li><a href="#">LOGIN</a></li>
-                    <li><a href="#">LEADERBOARD</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="content">
+/**
+ * Template Name: Owner
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ */
+get_header(); ?>
+
+	<div id="content">
             <h2 id="pageTitle">FACILITY ADMIN</h2>
             <section class="tab">
-                <img src="img/edit-info.png" alt="" class="editInfo">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/edit-info.png" alt="" class="editInfo">
                 <h3 class="joinHitrax">JOIN HITTRAX STATSCENTER FOR ACCESS TO ADVANCED FEATURES</h3>
                 <h4 class="facility">K-ZONE ACADEMY</h4>
                 <h5 class="location">ID# 999 • 1002 Investment Blvd., Apex, NC 27502</h5>
@@ -51,26 +31,19 @@
                         <li><a href="">SUPPORT RESOURCES</a></li>
                     </ul>
                 </section>
-                <section class="advanced">
-                    <h3>ADVANCED SUBSCRIPTION FEATURES</h3>
-                    <ul>
-                        <li><a href="">SUBSCRIPTION FEATURE</a></li>
-                        <li><a href="">SUBSCRIPTION FEATURE</a></li>
-                        <li><a href="">SUBSCRIPTION FEATURE</a></li>
-                    </ul>
-                </section>
             </section>
             <section class="callout">
-                <div id="callout-wrapper">
-                    <img src="img/App-Icon.png" alt="" class="app-icon">
-                        <h4>DESKTOP APP</h4>
-                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend.</p>
-                        <h5>DOWNLOAD THE FREE APP</h5>
-                    <ul>
-                        <li><a href="#">WINDOWS</a></li>
-                            <li><a href="#">MAC</a></li>
-                    </ul>
-                    <img src="img/desktop-app.png" alt="" class="desktop">
+                <div>
+                    <h4>YOU’RE MISSING OUT ON  ADVANCED FACILITY FEATURES</h4>
+                    <p>Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet feature one</li>
+                            <li>Lorem ipsum sit amet feature two</li>
+                            <li>Lorem ipsum dolor sit amet feature three</li>
+                            <li>Lorem dolor sit amet feature four</li>
+                        </ul>
+                    <a href="#" class="button">SIGN UP NOW</a>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/owner-slider.png" alt="">
                 </div>
             </section>
             <br />
@@ -341,35 +314,4 @@
             </section>
             
        </div>
-        <footer>
-            <nav>
-                <ul id="leftNav">
-                    <li><a href="#">&copy; 2015 INMOTION SYSTEMS, LLC</a></li>
-                    <li><a href="#">PRIVACY POLICY</a></li>
-                    <li><a href="#">TERMS OF USE</a></li>
-                </ul>
-            </nav>
-            <nav>
-                <ul id="socialNav">
-                    <li><a href="#"><img src="img/Facebook.png" alt=""></a></li>
-                    <li><a href="#"><img src="img/Twitter.png" alt=""></a></li>
-                    <li><a href="#"><img src="img/Instagram.png" alt=""></a></li>
-                </ul>
-            </nav>
-        </footer>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        
-    </body>
-</html>
+<?php get_footer(); ?>
