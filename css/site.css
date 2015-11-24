@@ -168,6 +168,184 @@ h2#forgotPasswordReset {
   height: 37px;
   margin-top: 40px;
 }
+/* HOME TEMPLATE */
+.page-template-page-home header {
+  background: url(../img/Home-HeroImage.png) center center no-repeat;
+  background-size: cover;
+  height: 925px;
+  position: relative;
+}
+.page-template-page-home header #logo {
+  width: 616px;
+  position: static;
+  margin: 0 auto;
+  display: block;
+  padding-top: 202px;
+}
+.page-template-page-home header div#gradient {
+  /* Mask: */
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* HeroImage: */
+  opacity: 1;
+  height: 125px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.page-template-page-home header div#gradient ul.stats {
+  width: 1053px;
+  height: 191px;
+  margin: 0 auto;
+  margin-top: -191px;
+  opacity: 1;
+  padding-left: 0;
+}
+.page-template-page-home header div#gradient ul.stats li {
+  height: 100%;
+  background: url(../img/oval-line.png) center bottom no-repeat;
+  float: left;
+  width: 190px;
+  margin-right: 66px;
+}
+.page-template-page-home header div#gradient ul.stats li h4 {
+  /* 23,260: */
+  font-family: ManifoldCF-Regular;
+  font-size: 30px;
+  color: #FFFFFF;
+  line-height: 18.75px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.page-template-page-home header div#gradient ul.stats li h5 {
+  font-family: ManifoldCF-Bold;
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 18.75px;
+  margin: 0;
+  text-align: center;
+}
+.page-template-page-home header div#gradient ul.stats li.large {
+  width: 235px;
+}
+.page-template-page-home header div#gradient ul.stats li:last-child {
+  float: right;
+  margin-right: 0;
+}
+.page-template-page-home header div#gradient ul.headerButtons {
+  width: 610px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.page-template-page-home header div#gradient ul.headerButtons li {
+  float: left;
+  width: 263px;
+  margin-right: 30px;
+  border: solid 2px #fff;
+  padding: 3px;
+  border-radius: 3px;
+  height: 56px;
+}
+.page-template-page-home header div#gradient ul.headerButtons li a {
+  /* LOGIN NOW: */
+  font-family: ManifoldCF-Bold;
+  font-size: 21px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  line-height: 56px;
+  vertical-align: middle;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+.page-template-page-home header div#gradient ul.headerButtons li:last-child {
+  margin-right: 0;
+}
+.page-template-page-home .callout {
+  /* Bar Background Copy: */
+  background-size: cover;
+  height: 540px;
+}
+.page-template-page-home .callout #callout-wrapper {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+.page-template-page-home .callout #callout-wrapper img.app-icon {
+  margin-top: 90px;
+}
+.page-template-page-home .callout #callout-wrapper h3 {
+  text-indent: -9999px;
+  background: url(../img/JOIN-HITTRAX-Home.png) no-repeat;
+  width: 969px;
+  height: 44px;
+}
+.page-template-page-home .callout #callout-wrapper h4 {
+  text-indent: -9999px;
+  background: url(../img/desktop-app-title.png) no-repeat;
+  width: 323px;
+  height: 41px;
+}
+.page-template-page-home .callout #callout-wrapper p {
+  /* Body Copy: */
+  font-family: ManifoldCF-Regular;
+  font-size: 18px;
+  color: #000000;
+  line-height: 24px;
+  width: 343px;
+}
+.page-template-page-home .callout #callout-wrapper h5 {
+  /* SubHead: */
+  font-family: ManifoldCF-Regular;
+  font-size: 21px;
+  color: #000000;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+.page-template-page-home .callout #callout-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.page-template-page-home .callout #callout-wrapper ul li {
+  float: left;
+  margin-right: 20px;
+  width: 142px;
+  height: 48px;
+  background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
+  padding: 2px;
+  border-radius: 3px;
+}
+.page-template-page-home .callout #callout-wrapper ul li a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  /* WINDOWS: */
+  font-family: ManifoldCF-ExtraBold;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 48px;
+  vertical-align: middle;
+  text-align: center;
+}
+.page-template-page-home .callout #callout-wrapper ul li a:hover {
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background: rgba(44, 44, 44, 0.5);
+}
+.page-template-page-home .callout #callout-wrapper img.desktop {
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+}
+/* END HOME TEMPLATE
+
 /* PLAYER TEMPLATE */
 .page-template-page-player #dateLocation {
   width: 942px;
