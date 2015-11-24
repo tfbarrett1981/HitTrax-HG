@@ -266,7 +266,8 @@ h2#forgotPasswordReset {
 .page-template-page-home .callout {
   /* Bar Background Copy: */
   background-size: cover;
-  height: 540px;
+  height: 620px;
+  padding-top: 60px;
 }
 .page-template-page-home .callout #callout-wrapper {
   width: 1100px;
@@ -282,66 +283,65 @@ h2#forgotPasswordReset {
   background: url(../img/JOIN-HITTRAX-Home.png) no-repeat;
   width: 969px;
   height: 44px;
-}
-.page-template-page-home .callout #callout-wrapper h4 {
-  text-indent: -9999px;
-  background: url(../img/desktop-app-title.png) no-repeat;
-  width: 323px;
-  height: 41px;
-}
-.page-template-page-home .callout #callout-wrapper p {
-  /* Body Copy: */
-  font-family: ManifoldCF-Regular;
-  font-size: 18px;
-  color: #000000;
-  line-height: 24px;
-  width: 343px;
+  margin: 0 auto;
 }
 .page-template-page-home .callout #callout-wrapper h5 {
   /* SubHead: */
   font-family: ManifoldCF-Regular;
   font-size: 21px;
-  color: #000000;
+  color: #FFFFFF;
   letter-spacing: 1px;
   line-height: 24px;
+  width: 354px;
+  padding-top: 60px;
 }
 .page-template-page-home .callout #callout-wrapper ul {
-  list-style: none;
+  list-style: disc;
   margin: 0;
   padding: 0;
+  padding-left: 20px;
 }
 .page-template-page-home .callout #callout-wrapper ul li {
-  float: left;
   margin-right: 20px;
-  width: 142px;
-  height: 48px;
-  background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
-  padding: 2px;
-  border-radius: 3px;
+  width: 354px;
+  color: #fff;
 }
-.page-template-page-home .callout #callout-wrapper ul li a {
+.page-template-page-home .callout #callout-wrapper .button {
+  /* Frame: */
+  border: 3px solid #2C2C2C;
+  border-radius: 5px;
+  /* JOIN HITTRAX STATSCE: */
+  font-family: ManifoldCF-Bold;
+  font-size: 21px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  width: 180px;
+  height: 56px;
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+  line-height: 60px;
+  text-decoration: none;
+  margin-top: 20px;
+  background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
+  padding: 3px;
+}
+.page-template-page-home .callout #callout-wrapper .button a {
+  background-color: #2c2c2c;
   display: block;
   height: 100%;
-  text-decoration: none;
-  /* WINDOWS: */
-  font-family: ManifoldCF-ExtraBold;
-  font-size: 24px;
+  /* SIGN UP NOW: */
+  font-family: ManifoldCF-Bold;
+  font-size: 21px;
   color: #FFFFFF;
-  line-height: 48px;
-  vertical-align: middle;
-  text-align: center;
+  letter-spacing: 1px;
+  line-height: 56px;
+  border-radius: 3px;
+  text-decoration: none;
 }
-.page-template-page-home .callout #callout-wrapper ul li a:hover {
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-  background: rgba(44, 44, 44, 0.5);
-}
-.page-template-page-home .callout #callout-wrapper img.desktop {
+.page-template-page-home .callout #callout-wrapper img.apps {
   position: absolute;
-  bottom: 50px;
+  bottom: 0;
   right: 10px;
 }
 /* END HOME TEMPLATE
