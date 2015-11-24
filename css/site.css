@@ -175,6 +175,10 @@ h2#forgotPasswordReset {
   height: 925px;
   position: relative;
 }
+.page-template-page-home header #topNav {
+  background-color: transparent;
+  box-shadow: none;
+}
 .page-template-page-home header #logo {
   width: 616px;
   position: static;
