@@ -62,7 +62,7 @@ header #logo {
   left: 166px;
 }
 header #topNav {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 70px;
   /* Top Nav: */
@@ -74,7 +74,8 @@ header #topNav {
   height: 65px;
   background-color: #e6632f;
   border-radius: 0 0 10px 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);*/
+  z-index: 1000;
 }
 header #topNav ul {
   font-size: 14px;
@@ -117,7 +118,7 @@ footer ul li {
   margin-top: 0;
 }
 footer #leftNav {
-  margin-left: 166px;
+  margin-left: 75px;
   padding: 0;
 }
 footer #leftNav li {
@@ -147,6 +148,7 @@ footer #socialNav {
   float: right;
   margin-right: 70px;
   padding: 0;
+  list-style: none;
 }
 footer #socialNav li {
   float: left;
@@ -169,24 +171,24 @@ h2#forgotPasswordReset {
   margin-top: 40px;
 }
 /* HOME TEMPLATE */
-.page-template-page-home header {
+.page-template-page-homepage-php header {
   background: url(../img/Home-HeroImage.png) center center no-repeat;
   background-size: cover;
   height: 925px;
   position: relative;
 }
-.page-template-page-home header #topNav {
-  background-color: transparent;
-  box-shadow: none;
+.page-template-page-homepage-php header #topNav {
+  /*background-color: transparent;
+			box-shadow: none;*/
 }
-.page-template-page-home header #logo {
+.page-template-page-homepage-php header #logo {
   width: 616px;
   position: static;
   margin: 0 auto;
   display: block;
   padding-top: 202px;
 }
-.page-template-page-home header div#gradient {
+.page-template-page-homepage-php header div#gradient {
   /* Mask: */
   background-image: none;
   background-color: rgba(0, 0, 0, 0.6);
@@ -197,22 +199,23 @@ h2#forgotPasswordReset {
   position: absolute;
   bottom: 0;
 }
-.page-template-page-home header div#gradient ul.stats {
+.page-template-page-homepage-php header div#gradient ul.stats {
   width: 1053px;
   height: 191px;
   margin: 0 auto;
   margin-top: -191px;
   opacity: 1;
   padding-left: 0;
+  list-style: none;
 }
-.page-template-page-home header div#gradient ul.stats li {
+.page-template-page-homepage-php header div#gradient ul.stats li {
   height: 100%;
   background: url(../img/oval-line.png) center bottom no-repeat;
   float: left;
   width: 190px;
   margin-right: 66px;
 }
-.page-template-page-home header div#gradient ul.stats li h4 {
+.page-template-page-homepage-php header div#gradient ul.stats li h4 {
   /* 23,260: */
   font-family: ManifoldCF-Regular;
   font-size: 30px;
@@ -223,7 +226,7 @@ h2#forgotPasswordReset {
   margin-bottom: 10px;
   margin-top: 30px;
 }
-.page-template-page-home header div#gradient ul.stats li h5 {
+.page-template-page-homepage-php header div#gradient ul.stats li h5 {
   font-family: ManifoldCF-Bold;
   font-size: 20px;
   color: #FFFFFF;
@@ -231,28 +234,28 @@ h2#forgotPasswordReset {
   margin: 0;
   text-align: center;
 }
-.page-template-page-home header div#gradient ul.stats li.large {
+.page-template-page-homepage-php header div#gradient ul.stats li.large {
   width: 235px;
 }
-.page-template-page-home header div#gradient ul.stats li:last-child {
+.page-template-page-homepage-php header div#gradient ul.stats li:last-child {
   float: right;
   margin-right: 0;
 }
-.page-template-page-home header div#gradient ul.headerButtons {
+.page-template-page-homepage-php header div#gradient ul.headerButtons {
   width: 610px;
   margin: 0 auto;
   margin-top: 30px;
+  list-style: none;
 }
-.page-template-page-home header div#gradient ul.headerButtons li {
+.page-template-page-homepage-php header div#gradient ul.headerButtons li {
   float: left;
   width: 263px;
   margin-right: 30px;
-  border: solid 2px #fff;
   padding: 3px;
   border-radius: 3px;
-  height: 56px;
+  height: 60px;
 }
-.page-template-page-home header div#gradient ul.headerButtons li a {
+.page-template-page-homepage-php header div#gradient ul.headerButtons li a {
   /* LOGIN NOW: */
   font-family: ManifoldCF-Bold;
   font-size: 21px;
@@ -264,32 +267,37 @@ h2#forgotPasswordReset {
   text-align: center;
   display: block;
 }
-.page-template-page-home header div#gradient ul.headerButtons li:last-child {
-  margin-right: 0;
+.page-template-page-homepage-php header div#gradient ul.headerButtons li:first-child {
+  border: none;
+  background: url(../img/button-login-now-home.png) top left no-repeat;
 }
-.page-template-page-home .callout-top {
+.page-template-page-homepage-php header div#gradient ul.headerButtons li:last-child {
+  margin-right: 0;
+  background: url(../img/button-home-view-leaderboard.png) top left no-repeat;
+}
+.page-template-page-homepage-php .callout-top {
   /* Bar Background Copy: */
   background-size: cover;
   height: 620px;
-  padding-top: 60px;
+  padding-top: 40px;
 }
-.page-template-page-home .callout-top #callout-wrapper {
+.page-template-page-homepage-php .callout-top #callout-wrapper {
   width: 1100px;
   margin: 0 auto;
   position: relative;
   height: 100%;
 }
-.page-template-page-home .callout-top #callout-wrapper img.app-icon {
+.page-template-page-homepage-php .callout-top #callout-wrapper img.app-icon {
   margin-top: 90px;
 }
-.page-template-page-home .callout-top #callout-wrapper h3 {
+.page-template-page-homepage-php .callout-top #callout-wrapper h3 {
   text-indent: -9999px;
   background: url(../img/JOIN-HITTRAX-Home.png) no-repeat;
   width: 969px;
   height: 44px;
   margin: 0 auto;
 }
-.page-template-page-home .callout-top #callout-wrapper h5 {
+.page-template-page-homepage-php .callout-top #callout-wrapper h5 {
   /* SubHead: */
   font-family: ManifoldCF-Regular;
   font-size: 21px;
@@ -299,18 +307,18 @@ h2#forgotPasswordReset {
   width: 354px;
   padding-top: 60px;
 }
-.page-template-page-home .callout-top #callout-wrapper ul {
+.page-template-page-homepage-php .callout-top #callout-wrapper ul {
   list-style: disc;
   margin: 0;
   padding: 0;
   padding-left: 20px;
 }
-.page-template-page-home .callout-top #callout-wrapper ul li {
+.page-template-page-homepage-php .callout-top #callout-wrapper ul li {
   margin-right: 20px;
   width: 354px;
   color: #fff;
 }
-.page-template-page-home .callout-top #callout-wrapper .button {
+.page-template-page-homepage-php .callout-top #callout-wrapper .button {
   /* Frame: */
   border: 3px solid #2C2C2C;
   border-radius: 5px;
@@ -320,7 +328,7 @@ h2#forgotPasswordReset {
   color: #FFFFFF;
   letter-spacing: 1px;
   width: 180px;
-  height: 56px;
+  height: 60px;
   text-align: center;
   display: block;
   vertical-align: middle;
@@ -330,7 +338,7 @@ h2#forgotPasswordReset {
   background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
   padding: 3px;
 }
-.page-template-page-home .callout-top #callout-wrapper .button a {
+.page-template-page-homepage-php .callout-top #callout-wrapper .button a {
   background-color: #2c2c2c;
   display: block;
   height: 100%;
@@ -339,25 +347,25 @@ h2#forgotPasswordReset {
   font-size: 21px;
   color: #FFFFFF;
   letter-spacing: 1px;
-  line-height: 56px;
+  line-height: 54px;
   border-radius: 3px;
   text-decoration: none;
 }
-.page-template-page-home .callout-top #callout-wrapper img.apps {
+.page-template-page-homepage-php .callout-top #callout-wrapper img.apps {
   position: absolute;
   bottom: 0;
   right: 10px;
 }
-.page-template-page-home .callout-bottom {
+.page-template-page-homepage-php .callout-bottom {
   background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
   height: 610px;
 }
-.page-template-page-home .callout-bottom .callout-wrapper {
+.page-template-page-homepage-php .callout-bottom .callout-wrapper {
   width: 1100px;
   margin: 0 auto;
   position: relative;
 }
-.page-template-page-home .callout-bottom .callout-wrapper h3 {
+.page-template-page-homepage-php .callout-bottom .callout-wrapper h3 {
   /* INCLUDES ACCESS TO A: */
   font-family: ManifoldCF-Light;
   font-size: 28px;
@@ -368,41 +376,47 @@ h2#forgotPasswordReset {
   text-align: center;
   padding-top: 30px;
 }
-.page-template-page-home .callout-bottom .callout-wrapper ul.graphics {
+.page-template-page-homepage-php .callout-bottom .callout-wrapper ul.graphics {
   list-style: none;
+  padding-left: 0;
 }
-.page-template-page-home .callout-bottom .callout-wrapper ul.graphics li {
+.page-template-page-homepage-php .callout-bottom .callout-wrapper ul.graphics li {
   float: left;
   width: 263px;
   text-align: center;
+  margin-right: 15px;
 }
-.page-template-page-home .callout-bottom .callout-wrapper ul.graphics li h4 {
+.page-template-page-homepage-php .callout-bottom .callout-wrapper ul.graphics li h4 {
   /* SPRAY CHARTS: */
   font-family: ManifoldCF-Bold;
   font-size: 28px;
   color: #FFFFFF;
   letter-spacing: 1px;
   line-height: 24px;
+  font-weight: bold;
 }
-.page-template-page-home .callout-bottom .callout-wrapper ul.graphics li img {
+.page-template-page-homepage-php .callout-bottom .callout-wrapper ul.graphics li img {
   display: block;
   margin: 0 auto;
 }
-.page-template-page-home .callout-bottom .callout-wrapper ul.bottomButtons {
+.page-template-page-homepage-php .callout-bottom .callout-wrapper ul.graphics li:last-child {
+  margin-right: 0;
+}
+.page-template-page-homepage-php .callout-bottom .callout-wrapper ul.bottomButtons {
   width: 675px;
   list-style: none;
   margin: 0 auto;
   padding: 0;
   padding-top: 30px;
 }
-.page-template-page-home .callout-bottom .callout-wrapper ul.bottomButtons li {
+.page-template-page-homepage-php .callout-bottom .callout-wrapper ul.bottomButtons li {
   float: left;
   width: 305px;
   height: 56px;
   border: solid 2px #fff;
   border-radius: 5px;
 }
-.page-template-page-home .callout-bottom .callout-wrapper ul.bottomButtons li a {
+.page-template-page-homepage-php .callout-bottom .callout-wrapper ul.bottomButtons li a {
   line-height: 56px;
   text-decoration: none;
   color: #fff;
@@ -415,7 +429,7 @@ h2#forgotPasswordReset {
   text-align: center;
   display: block;
 }
-.page-template-page-home .callout-bottom .callout-wrapper ul.bottomButtons li a:hover {
+.page-template-page-homepage-php .callout-bottom .callout-wrapper ul.bottomButtons li a:hover {
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -423,34 +437,34 @@ h2#forgotPasswordReset {
   transition: all 500ms ease;
   background: rgba(44, 44, 44, 0.3);
 }
-.page-template-page-home .callout-bottom .callout-wrapper ul.bottomButtons li:first-child {
+.page-template-page-homepage-php .callout-bottom .callout-wrapper ul.bottomButtons li:first-child {
   margin-right: 20px;
   width: 338px;
 }
 /* END HOME TEMPLATE
 
 /* PLAYER TEMPLATE */
-.page-template-page-player #dateLocation {
+.page-template-page-player-php #dateLocation {
   width: 942px;
   margin: 0 auto;
 }
-.page-template-page-player h2#pageTitle {
+.page-template-page-player-php h2#pageTitle {
   background: url(../img/my-last-batting-session.png) no-repeat center center;
   text-indent: -9999px;
   height: 50px;
   margin-top: 40px;
 }
-.page-template-page-player hr:first-child {
+.page-template-page-player-php hr:first-child {
   float: left;
   margin-top: 13px;
   width: 200px;
 }
-.page-template-page-player hr:last-child {
+.page-template-page-player-php hr:last-child {
   float: right;
   margin-top: 13px;
   width: 200px;
 }
-.page-template-page-player h3 {
+.page-template-page-player-php h3 {
   /* HR Left: */
   /* Date/Location: */
   font-family: ManifoldCF-Regular;
@@ -465,18 +479,177 @@ h2#forgotPasswordReset {
   padding: 0;
   float: left;
 }
-.page-template-page-player .tab {
+.page-template-page-player-php .tab {
   background: url(../img/player-tab.png) no-repeat;
   width: 1142px;
   height: 608px;
   margin: 0 auto;
+  position: relative;
 }
-.page-template-page-player .callout {
+.page-template-page-player-php .tab ul.velocity {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.page-template-page-player-php .tab ul.velocity li.large {
+  /* Avg: */
+  font-family: ManifoldCF-Bold;
+  font-size: 51.2px;
+  color: #FFFFFF;
+  line-height: 73px;
+  position: absolute;
+  top: 170px;
+  left: 150px;
+}
+.page-template-page-player-php .tab ul.velocity li.small {
+  /* Max: */
+  font-family: ManifoldCF-Bold;
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 24px;
+  position: absolute;
+  top: 270px;
+  left: 238px;
+}
+.page-template-page-player-php .tab ul.distance {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.page-template-page-player-php .tab ul.distance li.large {
+  /* Avg: */
+  font-family: ManifoldCF-Bold;
+  font-size: 51.2px;
+  color: #FFFFFF;
+  line-height: 73px;
+  position: absolute;
+  top: 415px;
+  left: 153px;
+}
+.page-template-page-player-php .tab ul.distance li.small {
+  /* Max: */
+  font-family: ManifoldCF-Bold;
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 24px;
+  position: absolute;
+  top: 443px;
+  left: 241px;
+}
+.page-template-page-player-php .tab table.statstable {
+  position: absolute;
+  left: 400px;
+  top: 123px;
+}
+.page-template-page-player-php .tab table.statstable td {
+  padding: 0;
+  width: 100px;
+  height: 92px;
+  line-height: 92px;
+  vertical-align: middle;
+  padding-right: 3px;
+  /* .336: */
+  font-family: ManifoldCF-Regular;
+  font-size: 22.94px;
+  color: #FFFFFF;
+  line-height: 34px;
+  text-align: center;
+}
+.page-template-page-player-php .tab table.gridOutside {
+  position: absolute;
+  top: 245px;
+  left: 415px;
+}
+.page-template-page-player-php .tab table.gridOutside td {
+  padding: 0;
+  width: 156px;
+  height: 150px;
+  line-height: 158px;
+  /* .394: */
+  font-family: ManifoldCF-ExtraBold;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 24px;
+  vertical-align: top;
+}
+.page-template-page-player-php .tab table.gridOutside td small {
+  display: block;
+  /* 34/42: */
+  font-family: ManifoldCF-ExtraBold;
+  font-size: 15px;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+.page-template-page-player-php .tab table.gridOutside tr:last-child td {
+  vertical-align: bottom;
+}
+.page-template-page-player-php .tab table.gridOutside td:first-child {
+  text-align: left;
+}
+.page-template-page-player-php .tab table.gridOutside td:last-child {
+  text-align: right;
+}
+.page-template-page-player-php .tab table.gridInside {
+  position: absolute;
+  top: 290px;
+  left: 465px;
+}
+.page-template-page-player-php .tab table.gridInside td {
+  padding: 0;
+  padding-right: 2px;
+  width: 68px;
+  height: 72px;
+  line-height: 72px;
+  /* .394: */
+  font-family: ManifoldCF-ExtraBold;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 24px;
+  vertical-align: middle;
+  text-align: center;
+}
+.page-template-page-player-php .tab table.gridInside td small {
+  display: block;
+  /* 34/42: */
+  font-family: ManifoldCF-ExtraBold;
+  font-size: 15px;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+.page-template-page-player-php .tab table.sprayTable {
+  position: absolute;
+  top: 300px;
+  left: 853px;
+}
+.page-template-page-player-php .tab table.sprayTable td {
+  padding: 0;
+  width: 75px;
+  vertical-align: top;
+  height: 77px;
+  line-height: 77px;
+  text-align: center;
+  /* 14%: */
+  font-family: ManifoldCF-ExtraBold;
+  font-size: 28.15px;
+  color: #FFFFFF;
+  line-height: 41px;
+}
+.page-template-page-player-php .tab table.sprayTable td:first-child,
+.page-template-page-player-php .tab table.sprayTable td:last-child {
+  vertical-align: bottom;
+}
+.page-template-page-player-php .tab table.sprayTable td:first-child {
+  text-align: left;
+}
+.page-template-page-player-php .tab table.sprayTable td:last-child {
+  text-align: right;
+}
+.page-template-page-player-php .callout {
   /* Bar Background Copy: */
   background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
   height: 345px;
 }
-.page-template-page-player .callout h4 {
+.page-template-page-player-php .callout h4 {
   /* YOU’RE MISSING OUT O: */
   font-family: ManifoldCF-Bold;
   font-size: 26px;
@@ -487,7 +660,7 @@ h2#forgotPasswordReset {
   text-align: center;
   padding-top: 40px;
 }
-.page-template-page-player .callout p {
+.page-template-page-player-php .callout p {
   width: 753px;
   margin: 0 auto;
   text-align: center;
@@ -498,7 +671,7 @@ h2#forgotPasswordReset {
   line-height: 30px;
   margin-top: 20px;
 }
-.page-template-page-player .callout .button {
+.page-template-page-player-php .callout .button {
   /* Frame: */
   border: 3px solid #2C2C2C;
   border-radius: 5px;
@@ -517,7 +690,7 @@ h2#forgotPasswordReset {
   text-decoration: none;
   margin-top: 20px;
 }
-.page-template-page-player .callout .button:hover {
+.page-template-page-player-php .callout .button:hover {
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -527,27 +700,27 @@ h2#forgotPasswordReset {
 }
 /* END PLAYER TEMPLATE */
 /* PLAYER SUBSCRIBED TEMPLATE */
-.page-template-page-player-subscribed #dateLocation {
+.page-template-page-player-subscribed-php #dateLocation {
   width: 942px;
   margin: 0 auto;
 }
-.page-template-page-player-subscribed h2#pageTitle {
+.page-template-page-player-subscribed-php h2#pageTitle {
   background: url(../img/my-last-batting-session.png) no-repeat center center;
   text-indent: -9999px;
   height: 50px;
   margin-top: 40px;
 }
-.page-template-page-player-subscribed hr:first-child {
+.page-template-page-player-subscribed-php hr:first-child {
   float: left;
   margin-top: 13px;
   width: 200px;
 }
-.page-template-page-player-subscribed hr:last-child {
+.page-template-page-player-subscribed-php hr:last-child {
   float: right;
   margin-top: 13px;
   width: 200px;
 }
-.page-template-page-player-subscribed h3 {
+.page-template-page-player-subscribed-php h3 {
   /* HR Left: */
   /* Date/Location: */
   font-family: ManifoldCF-Regular;
@@ -562,34 +735,34 @@ h2#forgotPasswordReset {
   padding: 0;
   float: left;
 }
-.page-template-page-player-subscribed .tab {
+.page-template-page-player-subscribed-php .tab {
   background: url(../img/player-tab.png) no-repeat;
   width: 1142px;
   height: 608px;
   margin: 0 auto;
 }
-.page-template-page-player-subscribed .callout-mobile {
+.page-template-page-player-subscribed-php .callout-mobile {
   /* Bar Background Copy: */
   background: url(../img/hittrax-bgvideo-blur-color.png);
   background-size: cover;
   height: 600px;
 }
-.page-template-page-player-subscribed .callout-mobile #callout-wrapper {
+.page-template-page-player-subscribed-php .callout-mobile #callout-wrapper {
   width: 1100px;
   margin: 0 auto;
   position: relative;
   height: 100%;
 }
-.page-template-page-player-subscribed .callout-mobile #callout-wrapper img.app-icon {
+.page-template-page-player-subscribed-php .callout-mobile #callout-wrapper img.app-icon {
   margin-top: 120px;
 }
-.page-template-page-player-subscribed .callout-mobile #callout-wrapper h4 {
+.page-template-page-player-subscribed-php .callout-mobile #callout-wrapper h4 {
   text-indent: -9999px;
   background: url(../img/go-mobile.png) no-repeat;
   width: 267px;
   height: 41px;
 }
-.page-template-page-player-subscribed .callout-mobile #callout-wrapper p {
+.page-template-page-player-subscribed-php .callout-mobile #callout-wrapper p {
   /* Body Copy: */
   font-family: ManifoldCF-Regular;
   font-size: 18px;
@@ -597,7 +770,7 @@ h2#forgotPasswordReset {
   line-height: 24px;
   width: 495px;
 }
-.page-template-page-player-subscribed .callout-mobile #callout-wrapper h5 {
+.page-template-page-player-subscribed-php .callout-mobile #callout-wrapper h5 {
   /* SubHead: */
   font-family: ManifoldCF-Regular;
   font-size: 21px;
@@ -605,22 +778,22 @@ h2#forgotPasswordReset {
   letter-spacing: 1px;
   line-height: 24px;
 }
-.page-template-page-player-subscribed .callout-mobile #callout-wrapper ul {
+.page-template-page-player-subscribed-php .callout-mobile #callout-wrapper ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.page-template-page-player-subscribed .callout-mobile #callout-wrapper ul li {
+.page-template-page-player-subscribed-php .callout-mobile #callout-wrapper ul li {
   float: left;
   margin-right: 20px;
   width: 142px;
   height: 48px;
 }
-.page-template-page-player-subscribed .callout-mobile #callout-wrapper ul li a {
+.page-template-page-player-subscribed-php .callout-mobile #callout-wrapper ul li a {
   display: block;
   height: 100%;
 }
-.page-template-page-player-subscribed .callout-mobile #callout-wrapper ul li a:hover {
+.page-template-page-player-subscribed-php .callout-mobile #callout-wrapper ul li a:hover {
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -628,41 +801,41 @@ h2#forgotPasswordReset {
   transition: all 500ms ease;
   background: rgba(44, 44, 44, 0.3);
 }
-.page-template-page-player-subscribed .callout-mobile #callout-wrapper ul li:first-child {
+.page-template-page-player-subscribed-php .callout-mobile #callout-wrapper ul li:first-child {
   background: url(../img/apple-app-store.png) no-repeat;
 }
-.page-template-page-player-subscribed .callout-mobile #callout-wrapper ul li:last-child {
+.page-template-page-player-subscribed-php .callout-mobile #callout-wrapper ul li:last-child {
   background: url(../img/google-play.png) no-repeat;
 }
-.page-template-page-player-subscribed .callout-mobile #callout-wrapper img.phone {
+.page-template-page-player-subscribed-php .callout-mobile #callout-wrapper img.phone {
   position: absolute;
   bottom: 0;
   right: 50px;
 }
-.page-template-page-player-subscribed .callout-desktop {
+.page-template-page-player-subscribed-php .callout-desktop {
   background-size: cover;
   height: 600px;
 }
-.page-template-page-player-subscribed .callout-desktop #callout-wrapper {
+.page-template-page-player-subscribed-php .callout-desktop #callout-wrapper {
   width: 1100px;
   margin: 0 auto;
   position: relative;
   height: 100%;
 }
-.page-template-page-player-subscribed .callout-desktop #callout-wrapper aside {
+.page-template-page-player-subscribed-php .callout-desktop #callout-wrapper aside {
   width: 343px;
   float: right;
 }
-.page-template-page-player-subscribed .callout-desktop #callout-wrapper aside img.app-icon {
+.page-template-page-player-subscribed-php .callout-desktop #callout-wrapper aside img.app-icon {
   margin-top: 100px;
 }
-.page-template-page-player-subscribed .callout-desktop #callout-wrapper aside h4 {
+.page-template-page-player-subscribed-php .callout-desktop #callout-wrapper aside h4 {
   text-indent: -9999px;
   background: url(../img/desktop-app-title.png) no-repeat;
   width: 323px;
   height: 41px;
 }
-.page-template-page-player-subscribed .callout-desktop #callout-wrapper aside p {
+.page-template-page-player-subscribed-php .callout-desktop #callout-wrapper aside p {
   /* Body Copy: */
   font-family: ManifoldCF-Regular;
   font-size: 18px;
@@ -670,7 +843,7 @@ h2#forgotPasswordReset {
   line-height: 24px;
   width: 343px;
 }
-.page-template-page-player-subscribed .callout-desktop #callout-wrapper aside h5 {
+.page-template-page-player-subscribed-php .callout-desktop #callout-wrapper aside h5 {
   /* SubHead: */
   font-family: ManifoldCF-Regular;
   font-size: 21px;
@@ -678,12 +851,12 @@ h2#forgotPasswordReset {
   letter-spacing: 1px;
   line-height: 24px;
 }
-.page-template-page-player-subscribed .callout-desktop #callout-wrapper aside ul {
+.page-template-page-player-subscribed-php .callout-desktop #callout-wrapper aside ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.page-template-page-player-subscribed .callout-desktop #callout-wrapper aside ul li {
+.page-template-page-player-subscribed-php .callout-desktop #callout-wrapper aside ul li {
   float: left;
   margin-right: 20px;
   width: 142px;
@@ -691,7 +864,7 @@ h2#forgotPasswordReset {
   background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
   padding: 2px;
 }
-.page-template-page-player-subscribed .callout-desktop #callout-wrapper aside ul li a {
+.page-template-page-player-subscribed-php .callout-desktop #callout-wrapper aside ul li a {
   display: block;
   height: 100%;
   background-color: #2c2c2c;
@@ -704,32 +877,32 @@ h2#forgotPasswordReset {
   vertical-align: middle;
   text-align: center;
 }
-.page-template-page-player-subscribed .callout-desktop #callout-wrapper img.desktop {
+.page-template-page-player-subscribed-php .callout-desktop #callout-wrapper img.desktop {
   position: absolute;
   bottom: 100px;
   left: 0px;
 }
 /* END PLAYER SUBSCRIBED TEMPLATE */
 /* OWNER TEMPLATE */
-.page-template-page-owner h2#pageTitle {
+.page-template-page-owner-php h2#pageTitle {
   background: url(../img/facility-admin.png) no-repeat center center;
   text-indent: -9999px;
   height: 50px;
   margin-top: 40px;
 }
-.page-template-page-owner .tab {
+.page-template-page-owner-php .tab {
   background: url(../img/owner-tab.png) #2c2c2c no-repeat;
   width: 1142px;
   height: 407px;
   margin: 0 auto;
   position: relative;
 }
-.page-template-page-owner .tab img.editInfo {
+.page-template-page-owner-php .tab img.editInfo {
   position: absolute;
   top: 15px;
   left: 15px;
 }
-.page-template-page-owner .tab h3.joinHitrax {
+.page-template-page-owner-php .tab h3.joinHitrax {
   /* Join HitTrax...: */
   width: 526px;
   height: 30px;
@@ -739,23 +912,23 @@ h2#forgotPasswordReset {
   top: 10px;
   right: 20px;
 }
-.page-template-page-owner .tab section.adminTools {
+.page-template-page-owner-php .tab section.adminTools {
   position: absolute;
   top: 80px;
   left: 20px;
 }
-.page-template-page-owner .tab section.adminTools h3 {
+.page-template-page-owner-php .tab section.adminTools h3 {
   text-indent: -9999px;
   background: url(../img/FACILITY-ADMIN-TOOLS.png) no-repeat;
   width: 255px;
   height: 19px;
 }
-.page-template-page-owner .tab section.adminTools ul {
+.page-template-page-owner-php .tab section.adminTools ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.page-template-page-owner .tab section.adminTools ul li {
+.page-template-page-owner-php .tab section.adminTools ul li {
   width: 340px;
   height: 60px;
   /* Frame: */
@@ -772,28 +945,28 @@ h2#forgotPasswordReset {
   vertical-align: middle;
   text-align: center;
 }
-.page-template-page-owner .tab section.adminTools ul li a {
+.page-template-page-owner-php .tab section.adminTools ul li a {
   color: #fff;
   text-decoration: none;
   display: block;
 }
-.page-template-page-owner .tab section.resources {
+.page-template-page-owner-php .tab section.resources {
   position: absolute;
   top: 220px;
   left: 20px;
 }
-.page-template-page-owner .tab section.resources h3 {
+.page-template-page-owner-php .tab section.resources h3 {
   text-indent: -9999px;
   background: url(../img/FACILITY-RESOURCES.png) no-repeat;
   width: 234px;
   height: 19px;
 }
-.page-template-page-owner .tab section.resources ul {
+.page-template-page-owner-php .tab section.resources ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.page-template-page-owner .tab section.resources ul li {
+.page-template-page-owner-php .tab section.resources ul li {
   width: 340px;
   height: 60px;
   /* Frame: */
@@ -810,12 +983,12 @@ h2#forgotPasswordReset {
   vertical-align: middle;
   text-align: center;
 }
-.page-template-page-owner .tab section.resources ul li a {
+.page-template-page-owner-php .tab section.resources ul li a {
   color: #fff;
   text-decoration: none;
   display: block;
 }
-.page-template-page-owner .tab h4.facility {
+.page-template-page-owner-php .tab h4.facility {
   /* Name: */
   font-family: ManifoldCF-DemiBold;
   font-size: 24px;
@@ -826,7 +999,7 @@ h2#forgotPasswordReset {
   left: 75px;
   margin: 0;
 }
-.page-template-page-owner .tab h5.location {
+.page-template-page-owner-php .tab h5.location {
   /* Info: */
   font-family: ManifoldCF-DemiBold;
   font-size: 16px;
@@ -837,18 +1010,18 @@ h2#forgotPasswordReset {
   left: 75px;
   margin: 0;
 }
-.page-template-page-owner .callout {
+.page-template-page-owner-php .callout {
   /* Bar Background Copy: */
   background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
   height: 550px;
 }
-.page-template-page-owner .callout div {
+.page-template-page-owner-php .callout div {
   width: 1142px;
   margin: 0 auto;
   position: relative;
   height: 100%;
 }
-.page-template-page-owner .callout div h4 {
+.page-template-page-owner-php .callout div h4 {
   /* YOU’RE MISSING OUT O: */
   /* YOU’RE MISSING OUT O: */
   margin-top: 0;
@@ -859,7 +1032,7 @@ h2#forgotPasswordReset {
   width: 376px;
   padding-top: 70px;
 }
-.page-template-page-owner .callout div p {
+.page-template-page-owner-php .callout div p {
   /* Text: */
   font-family: ManifoldCF-Regular;
   font-size: 20px;
@@ -867,7 +1040,7 @@ h2#forgotPasswordReset {
   line-height: 30px;
   width: 376px;
 }
-.page-template-page-owner .callout div ul {
+.page-template-page-owner-php .callout div ul {
   padding: 0;
   margin: 0;
   margin-left: 20px;
@@ -877,7 +1050,7 @@ h2#forgotPasswordReset {
   line-height: 30px;
   width: 376px;
 }
-.page-template-page-owner .callout div .button {
+.page-template-page-owner-php .callout div .button {
   /* Frame: */
   border: 3px solid #2C2C2C;
   border-radius: 5px;
@@ -895,7 +1068,7 @@ h2#forgotPasswordReset {
   text-decoration: none;
   margin-top: 20px;
 }
-.page-template-page-owner .callout div .button:hover {
+.page-template-page-owner-php .callout div .button:hover {
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -903,21 +1076,21 @@ h2#forgotPasswordReset {
   transition: all 500ms ease;
   background: rgba(44, 44, 44, 0.3);
 }
-.page-template-page-owner .callout div img {
+.page-template-page-owner-php .callout div img {
   position: absolute;
   right: 0;
   bottom: 55px;
 }
-.page-template-page-owner .facility-leaderboard h2#pageTitle {
+.page-template-page-owner-php .facility-leaderboard h2#pageTitle {
   background: url(../img/FACILITY-LEADERBOARD.png) no-repeat center center;
   text-indent: -9999px;
   height: 37px;
   margin-top: 40px;
 }
-.page-template-page-owner .facility-leaderboard .tab {
+.page-template-page-owner-php .facility-leaderboard .tab {
   min-height: 1350px;
 }
-.page-template-page-owner .facility-leaderboard .tab h4.topPast {
+.page-template-page-owner-php .facility-leaderboard .tab h4.topPast {
   background: url(../img/TOP-25-PAST.png) no-repeat;
   width: 372px;
   height: 28px;
@@ -927,7 +1100,7 @@ h2#forgotPasswordReset {
   margin-top: 0;
   left: 20px;
 }
-.page-template-page-owner .facility-leaderboard .tab ul {
+.page-template-page-owner-php .facility-leaderboard .tab ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -935,12 +1108,12 @@ h2#forgotPasswordReset {
   left: 20px;
   top: 85px;
 }
-.page-template-page-owner .facility-leaderboard .tab ul li {
+.page-template-page-owner-php .facility-leaderboard .tab ul li {
   width: 260px;
   float: left;
   margin-right: 20px;
 }
-.page-template-page-owner .facility-leaderboard .tab ul li h6 {
+.page-template-page-owner-php .facility-leaderboard .tab ul li h6 {
   margin: 0;
   /* Label: */
   font-family: ManifoldCF-Bold;
@@ -949,7 +1122,7 @@ h2#forgotPasswordReset {
   letter-spacing: 1.04px;
   line-height: 28px;
 }
-.page-template-page-owner .facility-leaderboard .tab ul li select {
+.page-template-page-owner-php .facility-leaderboard .tab ul li select {
   width: 260px;
   /* Frame: */
   background: rgba(255, 255, 255, 0.1);
@@ -957,14 +1130,14 @@ h2#forgotPasswordReset {
   height: 40px;
   border: 0;
 }
-.page-template-page-owner .facility-leaderboard .tab table {
+.page-template-page-owner-php .facility-leaderboard .tab table {
   position: absolute;
   top: 160px;
   left: 20px;
   width: 1093px;
   margin: 0 auto;
 }
-.page-template-page-owner .facility-leaderboard .tab table thead th {
+.page-template-page-owner-php .facility-leaderboard .tab table thead th {
   /* PLAYER: */
   font-family: ManifoldCF-ExtraBold;
   font-size: 20px;
@@ -972,24 +1145,24 @@ h2#forgotPasswordReset {
   line-height: 40px;
   text-align: left;
 }
-.page-template-page-owner .facility-leaderboard .tab table tbody tr:nth-child(odd) {
+.page-template-page-owner-php .facility-leaderboard .tab table tbody tr:nth-child(odd) {
   background: rgba(255, 255, 255, 0.2);
 }
-.page-template-page-owner .facility-leaderboard .tab table tbody tr:nth-child(odd) td {
+.page-template-page-owner-php .facility-leaderboard .tab table tbody tr:nth-child(odd) td {
   font-family: ManifoldCF-Regular;
   font-size: 20px;
   color: #fff;
   padding: 5px 10px;
 }
-.page-template-page-owner .facility-leaderboard .tab table tbody tr:nth-child(odd) td:first-child {
+.page-template-page-owner-php .facility-leaderboard .tab table tbody tr:nth-child(odd) td:first-child {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-.page-template-page-owner .facility-leaderboard .tab table tbody tr:nth-child(odd) td:last-child {
+.page-template-page-owner-php .facility-leaderboard .tab table tbody tr:nth-child(odd) td:last-child {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.page-template-page-owner .facility-leaderboard .tab table tbody tr:nth-child(even) td {
+.page-template-page-owner-php .facility-leaderboard .tab table tbody tr:nth-child(even) td {
   font-family: ManifoldCF-Regular;
   font-size: 20px;
   color: #fff;
@@ -997,25 +1170,25 @@ h2#forgotPasswordReset {
 }
 /* END OWNER TEMPLATE */
 /* OWNER SUBSCRIBED TEMPLATE */
-.page-template-page-owner-subscribed h2#pageTitle {
+.page-template-page-owner-subscribed-php h2#pageTitle {
   background: url(../img/facility-admin.png) no-repeat center center;
   text-indent: -9999px;
   height: 50px;
   margin-top: 40px;
 }
-.page-template-page-owner-subscribed .tab {
+.page-template-page-owner-subscribed-php .tab {
   background: url(../img/owner-tab.png) #2c2c2c no-repeat;
   width: 1142px;
   height: 534px;
   margin: 0 auto;
   position: relative;
 }
-.page-template-page-owner-subscribed .tab img.editInfo {
+.page-template-page-owner-subscribed-php .tab img.editInfo {
   position: absolute;
   top: 15px;
   left: 15px;
 }
-.page-template-page-owner-subscribed .tab h3.joinHitrax {
+.page-template-page-owner-subscribed-php .tab h3.joinHitrax {
   /* Join HitTrax...: */
   width: 526px;
   height: 30px;
@@ -1025,23 +1198,23 @@ h2#forgotPasswordReset {
   top: 10px;
   right: 20px;
 }
-.page-template-page-owner-subscribed .tab section.adminTools {
+.page-template-page-owner-subscribed-php .tab section.adminTools {
   position: absolute;
   top: 80px;
   left: 20px;
 }
-.page-template-page-owner-subscribed .tab section.adminTools h3 {
+.page-template-page-owner-subscribed-php .tab section.adminTools h3 {
   text-indent: -9999px;
   background: url(../img/FACILITY-ADMIN-TOOLS.png) no-repeat;
   width: 255px;
   height: 19px;
 }
-.page-template-page-owner-subscribed .tab section.adminTools ul {
+.page-template-page-owner-subscribed-php .tab section.adminTools ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.page-template-page-owner-subscribed .tab section.adminTools ul li {
+.page-template-page-owner-subscribed-php .tab section.adminTools ul li {
   width: 340px;
   height: 60px;
   /* Frame: */
@@ -1058,28 +1231,28 @@ h2#forgotPasswordReset {
   vertical-align: middle;
   text-align: center;
 }
-.page-template-page-owner-subscribed .tab section.adminTools ul li a {
+.page-template-page-owner-subscribed-php .tab section.adminTools ul li a {
   color: #fff;
   text-decoration: none;
   display: block;
 }
-.page-template-page-owner-subscribed .tab section.resources {
+.page-template-page-owner-subscribed-php .tab section.resources {
   position: absolute;
   top: 220px;
   left: 20px;
 }
-.page-template-page-owner-subscribed .tab section.resources h3 {
+.page-template-page-owner-subscribed-php .tab section.resources h3 {
   text-indent: -9999px;
   background: url(../img/FACILITY-RESOURCES.png) no-repeat;
   width: 234px;
   height: 19px;
 }
-.page-template-page-owner-subscribed .tab section.resources ul {
+.page-template-page-owner-subscribed-php .tab section.resources ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.page-template-page-owner-subscribed .tab section.resources ul li {
+.page-template-page-owner-subscribed-php .tab section.resources ul li {
   width: 340px;
   height: 60px;
   /* Frame: */
@@ -1096,28 +1269,28 @@ h2#forgotPasswordReset {
   vertical-align: middle;
   text-align: center;
 }
-.page-template-page-owner-subscribed .tab section.resources ul li a {
+.page-template-page-owner-subscribed-php .tab section.resources ul li a {
   color: #fff;
   text-decoration: none;
   display: block;
 }
-.page-template-page-owner-subscribed .tab section.advanced {
+.page-template-page-owner-subscribed-php .tab section.advanced {
   position: absolute;
   top: 370px;
   left: 20px;
 }
-.page-template-page-owner-subscribed .tab section.advanced h3 {
+.page-template-page-owner-subscribed-php .tab section.advanced h3 {
   text-indent: -9999px;
   background: url(../img/ADVANCED-SUBSCRIPTION-FEATURES.png) no-repeat;
   width: 412px;
   height: 28px;
 }
-.page-template-page-owner-subscribed .tab section.advanced ul {
+.page-template-page-owner-subscribed-php .tab section.advanced ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.page-template-page-owner-subscribed .tab section.advanced ul li {
+.page-template-page-owner-subscribed-php .tab section.advanced ul li {
   width: 340px;
   height: 60px;
   /* Frame: */
@@ -1135,13 +1308,13 @@ h2#forgotPasswordReset {
   text-align: center;
   padding: 3px;
 }
-.page-template-page-owner-subscribed .tab section.advanced ul li a {
+.page-template-page-owner-subscribed-php .tab section.advanced ul li a {
   color: #fff;
   background-color: #000;
   text-decoration: none;
   display: block;
 }
-.page-template-page-owner-subscribed .tab h4.facility {
+.page-template-page-owner-subscribed-php .tab h4.facility {
   /* Name: */
   font-family: ManifoldCF-DemiBold;
   font-size: 24px;
@@ -1152,7 +1325,7 @@ h2#forgotPasswordReset {
   left: 75px;
   margin: 0;
 }
-.page-template-page-owner-subscribed .tab h5.location {
+.page-template-page-owner-subscribed-php .tab h5.location {
   /* Info: */
   font-family: ManifoldCF-DemiBold;
   font-size: 16px;
@@ -1163,28 +1336,28 @@ h2#forgotPasswordReset {
   left: 75px;
   margin: 0;
 }
-.page-template-page-owner-subscribed .callout {
+.page-template-page-owner-subscribed-php .callout {
   /* Bar Background Copy: */
   background: url(../img/hittrax-bgvideo-blur-color.png);
   background-size: cover;
   height: 540px;
 }
-.page-template-page-owner-subscribed .callout #callout-wrapper {
+.page-template-page-owner-subscribed-php .callout #callout-wrapper {
   width: 1100px;
   margin: 0 auto;
   position: relative;
   height: 100%;
 }
-.page-template-page-owner-subscribed .callout #callout-wrapper img.app-icon {
+.page-template-page-owner-subscribed-php .callout #callout-wrapper img.app-icon {
   margin-top: 90px;
 }
-.page-template-page-owner-subscribed .callout #callout-wrapper h4 {
+.page-template-page-owner-subscribed-php .callout #callout-wrapper h4 {
   text-indent: -9999px;
   background: url(../img/desktop-app-title.png) no-repeat;
   width: 323px;
   height: 41px;
 }
-.page-template-page-owner-subscribed .callout #callout-wrapper p {
+.page-template-page-owner-subscribed-php .callout #callout-wrapper p {
   /* Body Copy: */
   font-family: ManifoldCF-Regular;
   font-size: 18px;
@@ -1192,7 +1365,7 @@ h2#forgotPasswordReset {
   line-height: 24px;
   width: 343px;
 }
-.page-template-page-owner-subscribed .callout #callout-wrapper h5 {
+.page-template-page-owner-subscribed-php .callout #callout-wrapper h5 {
   /* SubHead: */
   font-family: ManifoldCF-Regular;
   font-size: 21px;
@@ -1200,12 +1373,12 @@ h2#forgotPasswordReset {
   letter-spacing: 1px;
   line-height: 24px;
 }
-.page-template-page-owner-subscribed .callout #callout-wrapper ul {
+.page-template-page-owner-subscribed-php .callout #callout-wrapper ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.page-template-page-owner-subscribed .callout #callout-wrapper ul li {
+.page-template-page-owner-subscribed-php .callout #callout-wrapper ul li {
   float: left;
   margin-right: 20px;
   width: 142px;
@@ -1214,7 +1387,7 @@ h2#forgotPasswordReset {
   padding: 2px;
   border-radius: 3px;
 }
-.page-template-page-owner-subscribed .callout #callout-wrapper ul li a {
+.page-template-page-owner-subscribed-php .callout #callout-wrapper ul li a {
   display: block;
   height: 100%;
   text-decoration: none;
@@ -1226,7 +1399,7 @@ h2#forgotPasswordReset {
   vertical-align: middle;
   text-align: center;
 }
-.page-template-page-owner-subscribed .callout #callout-wrapper ul li a:hover {
+.page-template-page-owner-subscribed-php .callout #callout-wrapper ul li a:hover {
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -1234,21 +1407,21 @@ h2#forgotPasswordReset {
   transition: all 500ms ease;
   background: rgba(44, 44, 44, 0.5);
 }
-.page-template-page-owner-subscribed .callout #callout-wrapper img.desktop {
+.page-template-page-owner-subscribed-php .callout #callout-wrapper img.desktop {
   position: absolute;
   bottom: 50px;
   right: 10px;
 }
-.page-template-page-owner-subscribed .facility-leaderboard h2#pageTitle {
+.page-template-page-owner-subscribed-php .facility-leaderboard h2#pageTitle {
   background: url(../img/FACILITY-LEADERBOARD.png) no-repeat center center;
   text-indent: -9999px;
   height: 37px;
   margin-top: 40px;
 }
-.page-template-page-owner-subscribed .facility-leaderboard .tab {
+.page-template-page-owner-subscribed-php .facility-leaderboard .tab {
   min-height: 1350px;
 }
-.page-template-page-owner-subscribed .facility-leaderboard .tab h4.topPast {
+.page-template-page-owner-subscribed-php .facility-leaderboard .tab h4.topPast {
   background: url(../img/TOP-25-PAST.png) no-repeat;
   width: 372px;
   height: 28px;
@@ -1258,7 +1431,7 @@ h2#forgotPasswordReset {
   margin-top: 0;
   left: 20px;
 }
-.page-template-page-owner-subscribed .facility-leaderboard .tab ul {
+.page-template-page-owner-subscribed-php .facility-leaderboard .tab ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1266,12 +1439,12 @@ h2#forgotPasswordReset {
   left: 20px;
   top: 85px;
 }
-.page-template-page-owner-subscribed .facility-leaderboard .tab ul li {
+.page-template-page-owner-subscribed-php .facility-leaderboard .tab ul li {
   width: 260px;
   float: left;
   margin-right: 20px;
 }
-.page-template-page-owner-subscribed .facility-leaderboard .tab ul li h6 {
+.page-template-page-owner-subscribed-php .facility-leaderboard .tab ul li h6 {
   margin: 0;
   /* Label: */
   font-family: ManifoldCF-Bold;
@@ -1280,7 +1453,7 @@ h2#forgotPasswordReset {
   letter-spacing: 1.04px;
   line-height: 28px;
 }
-.page-template-page-owner-subscribed .facility-leaderboard .tab ul li select {
+.page-template-page-owner-subscribed-php .facility-leaderboard .tab ul li select {
   width: 260px;
   /* Frame: */
   background: rgba(255, 255, 255, 0.1);
@@ -1288,14 +1461,14 @@ h2#forgotPasswordReset {
   height: 40px;
   border: 0;
 }
-.page-template-page-owner-subscribed .facility-leaderboard .tab table {
+.page-template-page-owner-subscribed-php .facility-leaderboard .tab table {
   position: absolute;
   top: 160px;
   left: 20px;
   width: 1093px;
   margin: 0 auto;
 }
-.page-template-page-owner-subscribed .facility-leaderboard .tab table thead th {
+.page-template-page-owner-subscribed-php .facility-leaderboard .tab table thead th {
   /* PLAYER: */
   font-family: ManifoldCF-ExtraBold;
   font-size: 20px;
@@ -1303,24 +1476,24 @@ h2#forgotPasswordReset {
   line-height: 40px;
   text-align: left;
 }
-.page-template-page-owner-subscribed .facility-leaderboard .tab table tbody tr:nth-child(odd) {
+.page-template-page-owner-subscribed-php .facility-leaderboard .tab table tbody tr:nth-child(odd) {
   background: rgba(255, 255, 255, 0.2);
 }
-.page-template-page-owner-subscribed .facility-leaderboard .tab table tbody tr:nth-child(odd) td {
+.page-template-page-owner-subscribed-php .facility-leaderboard .tab table tbody tr:nth-child(odd) td {
   font-family: ManifoldCF-Regular;
   font-size: 20px;
   color: #fff;
   padding: 5px 10px;
 }
-.page-template-page-owner-subscribed .facility-leaderboard .tab table tbody tr:nth-child(odd) td:first-child {
+.page-template-page-owner-subscribed-php .facility-leaderboard .tab table tbody tr:nth-child(odd) td:first-child {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-.page-template-page-owner-subscribed .facility-leaderboard .tab table tbody tr:nth-child(odd) td:last-child {
+.page-template-page-owner-subscribed-php .facility-leaderboard .tab table tbody tr:nth-child(odd) td:last-child {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.page-template-page-owner-subscribed .facility-leaderboard .tab table tbody tr:nth-child(even) td {
+.page-template-page-owner-subscribed-php .facility-leaderboard .tab table tbody tr:nth-child(even) td {
   font-family: ManifoldCF-Regular;
   font-size: 20px;
   color: #fff;
@@ -1328,25 +1501,25 @@ h2#forgotPasswordReset {
 }
 /* END OWNER SUBSCRIBED TEMPLATE */
 /* LEADERBOARD TEMPLATE */
-.page-template-page-leaderboard h2#pageTitle {
+.page-template-page-leaderboard-php h2#pageTitle {
   background: url(../img/facility-admin.png) no-repeat center center;
   text-indent: -9999px;
   height: 50px;
   margin-top: 40px;
 }
-.page-template-page-leaderboard .tab {
+.page-template-page-leaderboard-php .tab {
   background: url(../img/owner-tab.png) #2c2c2c no-repeat;
   width: 1142px;
   height: 407px;
   margin: 0 auto;
   position: relative;
 }
-.page-template-page-leaderboard .tab img.editInfo {
+.page-template-page-leaderboard-php .tab img.editInfo {
   position: absolute;
   top: 15px;
   left: 15px;
 }
-.page-template-page-leaderboard .tab h3.joinHitrax {
+.page-template-page-leaderboard-php .tab h3.joinHitrax {
   /* Join HitTrax...: */
   width: 526px;
   height: 30px;
@@ -1356,23 +1529,23 @@ h2#forgotPasswordReset {
   top: 10px;
   right: 20px;
 }
-.page-template-page-leaderboard .tab section.adminTools {
+.page-template-page-leaderboard-php .tab section.adminTools {
   position: absolute;
   top: 80px;
   left: 20px;
 }
-.page-template-page-leaderboard .tab section.adminTools h3 {
+.page-template-page-leaderboard-php .tab section.adminTools h3 {
   text-indent: -9999px;
   background: url(../img/FACILITY-ADMIN-TOOLS.png) no-repeat;
   width: 255px;
   height: 19px;
 }
-.page-template-page-leaderboard .tab section.adminTools ul {
+.page-template-page-leaderboard-php .tab section.adminTools ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.page-template-page-leaderboard .tab section.adminTools ul li {
+.page-template-page-leaderboard-php .tab section.adminTools ul li {
   width: 340px;
   height: 60px;
   /* Frame: */
@@ -1389,28 +1562,28 @@ h2#forgotPasswordReset {
   vertical-align: middle;
   text-align: center;
 }
-.page-template-page-leaderboard .tab section.adminTools ul li a {
+.page-template-page-leaderboard-php .tab section.adminTools ul li a {
   color: #fff;
   text-decoration: none;
   display: block;
 }
-.page-template-page-leaderboard .tab section.resources {
+.page-template-page-leaderboard-php .tab section.resources {
   position: absolute;
   top: 220px;
   left: 20px;
 }
-.page-template-page-leaderboard .tab section.resources h3 {
+.page-template-page-leaderboard-php .tab section.resources h3 {
   text-indent: -9999px;
   background: url(../img/FACILITY-RESOURCES.png) no-repeat;
   width: 234px;
   height: 19px;
 }
-.page-template-page-leaderboard .tab section.resources ul {
+.page-template-page-leaderboard-php .tab section.resources ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.page-template-page-leaderboard .tab section.resources ul li {
+.page-template-page-leaderboard-php .tab section.resources ul li {
   width: 340px;
   height: 60px;
   /* Frame: */
@@ -1427,12 +1600,12 @@ h2#forgotPasswordReset {
   vertical-align: middle;
   text-align: center;
 }
-.page-template-page-leaderboard .tab section.resources ul li a {
+.page-template-page-leaderboard-php .tab section.resources ul li a {
   color: #fff;
   text-decoration: none;
   display: block;
 }
-.page-template-page-leaderboard .tab h4.facility {
+.page-template-page-leaderboard-php .tab h4.facility {
   /* Name: */
   font-family: ManifoldCF-DemiBold;
   font-size: 24px;
@@ -1443,7 +1616,7 @@ h2#forgotPasswordReset {
   left: 75px;
   margin: 0;
 }
-.page-template-page-leaderboard .tab h5.location {
+.page-template-page-leaderboard-php .tab h5.location {
   /* Info: */
   font-family: ManifoldCF-DemiBold;
   font-size: 16px;
@@ -1454,27 +1627,27 @@ h2#forgotPasswordReset {
   left: 75px;
   margin: 0;
 }
-.page-template-page-leaderboard .callout {
+.page-template-page-leaderboard-php .callout {
   /* Bar Background Copy: */
   background-image: linear-gradient(-180deg, #E76A38 0%, #C0282D 100%);
   height: 260px;
 }
-.page-template-page-leaderboard .callout div {
+.page-template-page-leaderboard-php .callout div {
   width: 1142px;
   margin: 0 auto;
   position: relative;
   height: 100%;
 }
-.page-template-page-leaderboard .callout div aside {
+.page-template-page-leaderboard-php .callout div aside {
   float: left;
   width: 49%;
   text-align: center;
   margin-top: 20px;
 }
-.page-template-page-leaderboard .callout div aside:first-child {
+.page-template-page-leaderboard-php .callout div aside:first-child {
   border-right: solid 1px #fff;
 }
-.page-template-page-leaderboard .callout div h6 {
+.page-template-page-leaderboard-php .callout div h6 {
   /* YOU’RE MISSING OUT O: */
   /* YOU’RE MISSING OUT O: */
   /* Text: */
@@ -1487,7 +1660,7 @@ h2#forgotPasswordReset {
   margin: 0 auto;
   padding-top: 10px;
 }
-.page-template-page-leaderboard .callout div p {
+.page-template-page-leaderboard-php .callout div p {
   /* Text: */
   font-family: ManifoldCF-Regular;
   font-size: 21px;
@@ -1496,7 +1669,7 @@ h2#forgotPasswordReset {
   width: 80%;
   margin: 0 auto;
 }
-.page-template-page-leaderboard .callout div ul {
+.page-template-page-leaderboard-php .callout div ul {
   padding: 0;
   margin: 0;
   margin-left: 20px;
@@ -1506,7 +1679,7 @@ h2#forgotPasswordReset {
   line-height: 30px;
   width: 376px;
 }
-.page-template-page-leaderboard .callout div .button {
+.page-template-page-leaderboard-php .callout div .button {
   /* Frame: */
   border: 3px solid #2C2C2C;
   border-radius: 5px;
@@ -1525,7 +1698,7 @@ h2#forgotPasswordReset {
   margin: 0 auto;
   margin-top: 20px;
 }
-.page-template-page-leaderboard .callout div .button:hover {
+.page-template-page-leaderboard-php .callout div .button:hover {
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -1533,33 +1706,33 @@ h2#forgotPasswordReset {
   transition: all 500ms ease;
   background: rgba(44, 44, 44, 0.3);
 }
-.page-template-page-leaderboard .callout div img {
+.page-template-page-leaderboard-php .callout div img {
   position: absolute;
   right: 0;
   bottom: 55px;
 }
-.page-template-page-leaderboard .facility-leaderboard h2#pageTitle {
+.page-template-page-leaderboard-php .facility-leaderboard h2#pageTitle {
   background: url(../img/FACILITY-LEADERBOARD.png) no-repeat center center;
   text-indent: -9999px;
   height: 37px;
   margin-top: 40px;
 }
-.page-template-page-leaderboard .facility-leaderboard section.filters {
+.page-template-page-leaderboard-php .facility-leaderboard section.filters {
   width: 1142px;
   margin: 0 auto;
 }
-.page-template-page-leaderboard .facility-leaderboard section.filters ul {
+.page-template-page-leaderboard-php .facility-leaderboard section.filters ul {
   list-style: none;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
 }
-.page-template-page-leaderboard .facility-leaderboard section.filters ul li {
+.page-template-page-leaderboard-php .facility-leaderboard section.filters ul li {
   width: 260px;
   float: left;
   margin-right: 20px;
 }
-.page-template-page-leaderboard .facility-leaderboard section.filters ul li h6 {
+.page-template-page-leaderboard-php .facility-leaderboard section.filters ul li h6 {
   margin: 0;
   /* Label: */
   font-family: ManifoldCF-Bold;
@@ -1568,7 +1741,7 @@ h2#forgotPasswordReset {
   letter-spacing: 1.04px;
   line-height: 28px;
 }
-.page-template-page-leaderboard .facility-leaderboard section.filters ul li select {
+.page-template-page-leaderboard-php .facility-leaderboard section.filters ul li select {
   width: 260px;
   /* Frame: */
   background: rgba(255, 255, 255, 0.1);
@@ -1576,10 +1749,10 @@ h2#forgotPasswordReset {
   height: 40px;
   border: 0;
 }
-.page-template-page-leaderboard .facility-leaderboard .tab {
+.page-template-page-leaderboard-php .facility-leaderboard .tab {
   min-height: 1350px;
 }
-.page-template-page-leaderboard .facility-leaderboard .tab h4.topPast {
+.page-template-page-leaderboard-php .facility-leaderboard .tab h4.topPast {
   background: url(../img/TOP-25-PAST.png) no-repeat;
   width: 372px;
   height: 28px;
@@ -1589,14 +1762,14 @@ h2#forgotPasswordReset {
   margin-top: 0;
   left: 20px;
 }
-.page-template-page-leaderboard .facility-leaderboard .tab table {
+.page-template-page-leaderboard-php .facility-leaderboard .tab table {
   position: absolute;
   top: 70px;
   left: 20px;
   width: 1093px;
   margin: 0 auto;
 }
-.page-template-page-leaderboard .facility-leaderboard .tab table thead th {
+.page-template-page-leaderboard-php .facility-leaderboard .tab table thead th {
   /* PLAYER: */
   font-family: ManifoldCF-ExtraBold;
   font-size: 20px;
@@ -1604,24 +1777,24 @@ h2#forgotPasswordReset {
   line-height: 40px;
   text-align: left;
 }
-.page-template-page-leaderboard .facility-leaderboard .tab table tbody tr:nth-child(odd) {
+.page-template-page-leaderboard-php .facility-leaderboard .tab table tbody tr:nth-child(odd) {
   background: rgba(255, 255, 255, 0.2);
 }
-.page-template-page-leaderboard .facility-leaderboard .tab table tbody tr:nth-child(odd) td {
+.page-template-page-leaderboard-php .facility-leaderboard .tab table tbody tr:nth-child(odd) td {
   font-family: ManifoldCF-Regular;
   font-size: 20px;
   color: #fff;
   padding: 5px 10px;
 }
-.page-template-page-leaderboard .facility-leaderboard .tab table tbody tr:nth-child(odd) td:first-child {
+.page-template-page-leaderboard-php .facility-leaderboard .tab table tbody tr:nth-child(odd) td:first-child {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-.page-template-page-leaderboard .facility-leaderboard .tab table tbody tr:nth-child(odd) td:last-child {
+.page-template-page-leaderboard-php .facility-leaderboard .tab table tbody tr:nth-child(odd) td:last-child {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.page-template-page-leaderboard .facility-leaderboard .tab table tbody tr:nth-child(even) td {
+.page-template-page-leaderboard-php .facility-leaderboard .tab table tbody tr:nth-child(even) td {
   font-family: ManifoldCF-Regular;
   font-size: 20px;
   color: #fff;
@@ -1699,7 +1872,7 @@ hr {
   letter-spacing: 2px;
   outline: none;
 }
-.page-template-page-reset .buttonBorder {
+.page-template-page-reset-php .buttonBorder {
   width: 265px;
 }
 .submitButton:hover {
@@ -1767,4 +1940,9 @@ hr {
 }
 .hidden {
   display: none;
+}
+.ulreset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
