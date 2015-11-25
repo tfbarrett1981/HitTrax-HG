@@ -589,12 +589,12 @@ h2#forgotPasswordReset {
 .page-template-page-player-php .tab table.gridOutside {
   position: absolute;
   top: 245px;
-  left: 415px;
+  left: 411px;
 }
 .page-template-page-player-php .tab table.gridOutside td {
   padding: 0;
-  width: 156px;
-  height: 150px;
+  width: 160px;
+  height: 155px;
   line-height: 158px;
   /* .394: */
   font-family: ManifoldCF-ExtraBold;
