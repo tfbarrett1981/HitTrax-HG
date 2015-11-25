@@ -486,6 +486,37 @@ h2#forgotPasswordReset {
   margin: 0 auto;
   position: relative;
 }
+.page-template-page-player-php .tab a.editInfo {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 48px;
+  height: 48px;
+  display: block;
+  text-indent: -9999px;
+}
+.page-template-page-player-php .tab h5 {
+  /* Name: */
+  margin: 0;
+  position: absolute;
+  top: 22px;
+  left: 80px;
+  font-family: ManifoldCF-DemiBold;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 20px;
+}
+.page-template-page-player-php .tab h6 {
+  margin: 0;
+  position: absolute;
+  top: 45px;
+  left: 80px;
+  /* 18U • SKILL: LITTLE : */
+  font-family: ManifoldCF-DemiBold;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 23px;
+}
 .page-template-page-player-php .tab ul.velocity {
   list-style: none;
   margin: 0;
